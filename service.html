@@ -97,10 +97,9 @@
   <!--================= COMPEREHENSIVE CYBERSECURITY SOLUTIONS SECTION START ===================-->
   <section class="py-12 md:py-[100px] border-b-2 border-[#C0D9EB]/30">
     <div class="container">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+      <div id="items" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         <div class="h-full transition-all hover:filter hover:drop-shadow-[6px_6px_8px_rgba(50,50,0,0.1)]">
-          <div
-            class="h-full bg-[#E6E7EB] transition-all hover:bg-blue p-0.5 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] relative">
+          <div class="h-full bg-[#E6E7EB] transition-all hover:bg-blue p-0.5 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] relative">
             <div
               class="h-full bg-white pt-5 rounded-2xl xl:pt-8 pb-5 px-5 xl:px-10 [clip-path:polygon(0_0,100%_0,100%_calc(100%-49px),calc(100%-49px)_100%,0_100%)]">
               <div class="text-center sm:text-start flex flex-col justify-between h-full">
@@ -260,9 +259,35 @@
             </div>
           </div>
         </div>
+        <div class="h-full transition-all hover:filter hover:drop-shadow-[6px_6px_8px_rgba(50,50,0,0.1)]">
+          <div
+            class="h-full bg-[#E6E7EB] transition-all hover:bg-blue p-0.5 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] relative">
+            <div
+              class="h-full bg-white pt-5 rounded-2xl xl:pt-8 pb-5 px-5 xl:px-10 [clip-path:polygon(0_0,100%_0,100%_calc(100%-49px),calc(100%-49px)_100%,0_100%)]">
+              <div class="text-center sm:text-start flex flex-col justify-between h-full">
+                <div class="flex items-center justify-center px-16"><img src="./src/assets/image/audit.svg" alt="audit">
+                </div>
+                <div class="content">
+                  <h3 class="mt-2.5 2xl:whitespace-nowrap">IT/IS Audit</h3>
+                <p class=" mt-3 ">Independent evaluation of IT governance, control mechanisms, and risk exposure.
+                </p>
+                <a href="service-details.html"
+                  class="btn-primary group inline-flex p-0 bg-transparent text-body text-sm capitalize underline border-0 underline-offset-6 mt-4">Read
+                  More
+                  <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M6 18 18 6m0 0H9m9 0v9" />
+                  </svg>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="flex items-center justify-center mt-6 md:mt-12">
-        <button class="btn-primary group">Load More
+        <button id="load-more-btn" class="btn-primary group">Load More
           <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -634,6 +659,26 @@
   <!-- ================= FOOTER SECTION END ================= -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="/src/main.js"></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", function () {
+      const itemsContainer = document.getElementById("items");
+      const loadMoreBtn = document.getElementById("load-more-btn");
+      const items = itemsContainer.children;
+      const defaultVisible = 6;
+
+      for (let i = defaultVisible; i < items.length; i++) {
+        items[i].classList.add("hidden");
+      }
+
+      loadMoreBtn.addEventListener("click", () => {
+        for (let i = defaultVisible; i < items.length; i++) {
+          items[i].classList.remove("hidden");
+        }
+
+        loadMoreBtn.style.display = "none";
+      });
+    });
+  </script>
 </body>
 
 </html>
