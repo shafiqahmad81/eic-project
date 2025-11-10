@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <title>eic | services</title>
+</head>
+
+<body>
+
+  <!--=============== HEADER SECTION START ==================-->
+  <header class="py-[54px] sticky top-0 left-0 right-0 bg-white z-50 transition-all duration-500 ease-in-out">
+    <div class="container">
+      <div class="flex items-center justify-between gap-2">
+        <a href="index.html" class="w-16 md:w-auto">
+          <img src="./src/assets/logo/logo.svg" alt="Logo icon">
+        </a>
+        <nav id="nav-area"
+          class="absolute top-0 left-[-9999px] right-0 bg-white lg:bg-transparent w-full h-screen lg:h-auto lg:w-auto lg:static flex items-center flex-col justify-between lg:block py-10 lg:py-0 transition-all duration-500 ease-in-ou overflow-y-auto">
+          <ul class="header-nav flex flex-col lg:flex-row items-center justify-center flex-wrap">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#" class="active-item">Services</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="lg:hidden flex items-center justify-center">
+            <button class="btn-primary group">Schedule a Call
+              <svg class="transition-all group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M6 18 18 6m0 0H9m9 0v9" />
+              </svg>
+            </button>
+          </div>
+          <div id="close-icon" class="w-6 absolute top-5 right-5 lg:hidden">
+            <button class="w-full">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0"
+                y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                <g>
+                  <path fill="#000000" fill-rule="evenodd"
+                    d="M5 17.586a1 1 0 1 0 1.415 1.415L12 13.414 17.586 19A1 1 0 0 0 19 17.586L13.414 12 19 6.414A1 1 0 0 0 17.585 5L12 10.586 6.414 5A1 1 0 0 0 5 6.414L10.586 12z"
+                    clip-rule="evenodd" opacity="1" data-original="#000000" class=" w-full"></path>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <div class="hidden lg:block min-w-[210px]">
+          <button class="btn-primary group">Schedule a Call
+            <svg class="transition-all duration-500 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 18 18 6m0 0H9m9 0v9" />
+            </svg>
+          </button>
+        </div>
+        <div id="hambargur-icon" class="block lg:hidden w-8">
+          <button class="w-8">
+            <svg class="w-full" xmlns="http://www.w3.org/2000/svg" version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64"
+              style="enable-background:new 0 0 512 512" xml:space="preserve">
+              <g>
+                <g data-name="4">
+                  <path
+                    d="M57 30H7a2 2 0 0 0 0 4h50a2 2 0 0 0 0-4zM7 19h50a2 2 0 0 0 0-4H7a2 2 0 0 0 0 4zM57 45H7a2 2 0 0 0 0 4h50a2 2 0 0 0 0-4z"
+                    fill="#000000" opacity="1" data-original="#000000"></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--=============== HEADER SECTION END ===============-->
+
+  <!--=============== BANNER SECTION START ===============-->
+  <section
+    class="banner-section bg-blue [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-60px)_100%,0_100%)] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-100px),calc(100%-150px)_100%,0_100%)]">
+    <div class="container">
+      <div class="bg-bottom bg-contain bg-no-repeat" style="background-image: url(./src/assets/image/banner-img.svg);">
+        <div class="max-w-[675px] mx-auto py-10 sm:py-20 md:py-40 lg:py-[232px] text-white text-center ">
+          <h1 class="uppercase">What we do</h1>
+          <p class="text-base sm:text-lg md:text-2xl md:leading-8 font-spacegrotesk mt-4 sm:mt-8">EIC the digital world
+            by delivering innovative security solutions & promoting cybersecurity awareness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--============== BANNER SECTION END ==============-->
+
+  <!--================= COMPEREHENSIVE CYBERSECURITY SOLUTIONS SECTION START ===================-->
+  <section class="py-12 md:py-[100px] border-b-2 border-[#C0D9EB]/30">
+    <div class="container">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div class="h-full transition-all hover:filter hover:drop-shadow-[6px_6px_8px_rgba(50,50,0,0.1)]">
+          <div
+            class="h-full bg-[#E6E7EB] transition-all hover:bg-blue p-0.5 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] relative">
+            <div
+              class="h-full bg-white pt-5 rounded-2xl xl:pt-8 pb-5 px-5 xl:px-10 [clip-path:polygon(0_0,100%_0,100%_calc(100%-49px),calc(100%-49px)_100%,0_100%)]">
+              <div class="text-center sm:text-start flex flex-col justify-between h-full">
+                <div class="flex items-center justify-center px-16">
+                  <img src="./src/assets/image/pci.svg" alt="pci">
+                </div>
+                <div class="content">
+                  <h3 class="mt-2.5">PCI DSS Compliance </h3>
+                  <p class=" mt-3">Comprehensive assessments for cardholder data
+                    environments, ensuring compliance from scoping to attestation.</p>
+                  <a href="service-details.html"
+                    class="btn-primary group inline-flex p-0 bg-transparent text-body text-sm capitalize underline border-0 underline-offset-6 mt-4">Read
+                    More
+                    <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M6 18 18 6m0 0H9m9 0v9" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-full transition-all hover:filter hover:drop-shadow-[6px_6px_8px_rgba(50,50,0,0.1)]">
+          <div
+            class="h-full bg-[#E6E7EB] transition-all hover:bg-blue p-0.5 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] relative">
+            <div
+              class="h-full bg-white pt-5 rounded-2xl xl:pt-8 pb-5 px-5 xl:px-10 [clip-path:polygon(0_0,100%_0,100%_calc(100%-49px),calc(100%-49px)_100%,0_100%)]">
+              <div class="text-center sm:text-start flex flex-col justify-between h-full">
+                <div class="flex items-center justify-center px-16"><img src="./src/assets/image/iso.svg" alt="iso">
+                </div>
+                <div class="content">
+                  <h3 class="mt-2.5">ISO 27001 ISMS</h3>
+                <p class=" mt-3">Thorough guidance to manage information security,
+                  ensuring organizations protect data systematically and cost-effectively.
+                </p>
+                <a href="service-details.html"
+                  class="btn-primary group inline-flex p-0 bg-transparent text-body text-sm capitalize underline border-0 underline-offset-6 mt-4">Read
+                  More
+                  <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M6 18 18 6m0 0H9m9 0v9" />
+                  </svg>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-full transition-all hover:filter hover:drop-shadow-[6px_6px_8px_rgba(50,50,0,0.1)]">
+          <div
+            class="h-full bg-[#E6E7EB] transition-all hover:bg-blue p-0.5 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] relative">
+            <div
+              class="h-full bg-white pt-5 rounded-2xl xl:pt-8 pb-5 px-5 xl:px-10 [clip-path:polygon(0_0,100%_0,100%_calc(100%-49px),calc(100%-49px)_100%,0_100%)]">
+              <div class="text-center sm:text-start flex flex-col justify-between h-full">
+                <div class="flex items-center justify-center px-16"><img src="./src/assets/image/swift.svg" alt="swift">
+                </div>
+                <div class="content">
+                  <h3 class="mt-2.5 2xl:whitespace-nowrap">Swift CSP Assessment</h3>
+                <p class=" mt-3"> Security evaluation & remediation aligning with
+                  control objectives to secure cross-border transactions.
+                </p>
+                <a href="service-details.html"
+                  class="btn-primary group inline-flex p-0 bg-transparent text-body text-sm capitalize underline border-0 underline-offset-6 mt-4">Read
+                  More
+                  <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M6 18 18 6m0 0H9m9 0v9" />
+                  </svg>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-full transition-all hover:filter hover:drop-shadow-[6px_6px_8px_rgba(50,50,0,0.1)]">
+          <div
+            class="h-full bg-[#E6E7EB] transition-all hover:bg-blue p-0.5 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] relative">
+            <div
+              class="h-full bg-white pt-5 rounded-2xl xl:pt-8 pb-5 px-5 xl:px-10 [clip-path:polygon(0_0,100%_0,100%_calc(100%-49px),calc(100%-49px)_100%,0_100%)]">
+              <div class="text-center sm:text-start flex flex-col justify-between h-full">
+                <div class="flex items-center justify-center px-16"><img src="./src/assets/image/iso.svg" alt="iso">
+                </div>
+                <div class="content">
+                  <h3 class="mt-2.5 2xl:whitespace-nowrap">ISO 22301:2019</h3>
+                <p class=" mt-3">Development of continuity frameworks to mitigate
+                  disruptions and maintain essential services.
+                </p>
+                <a href="service-details.html"
+                  class="btn-primary group inline-flex p-0 bg-transparent text-body text-sm capitalize underline border-0 underline-offset-6 mt-4">Read
+                  More
+                  <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M6 18 18 6m0 0H9m9 0v9" />
+                  </svg>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-full transition-all hover:filter hover:drop-shadow-[6px_6px_8px_rgba(50,50,0,0.1)]">
+          <div
+            class="h-full bg-[#E6E7EB] transition-all hover:bg-blue p-0.5 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] relative">
+            <div
+              class="h-full bg-white pt-5 rounded-2xl xl:pt-8 pb-5 px-5 xl:px-10 [clip-path:polygon(0_0,100%_0,100%_calc(100%-49px),calc(100%-49px)_100%,0_100%)]">
+              <div class="text-center sm:text-start flex flex-col justify-between h-full">
+                <div class="flex items-center justify-center px-16"><img src="./src/assets/image/cmmi.svg" alt="cmmi">
+                </div>
+                <div class="content">
+                  <h3 class="mt-2.5 2xl:whitespace-nowrap">CMMI</h3>
+                <p class=" mt-3 w-full max-w-[309px] mx-auto sm:mx-0">Process optimization and maturity enhancement for
+                  technology-driven organizations.
+                </p>
+                <a href="service-details.html"
+                  class="btn-primary group inline-flex p-0 bg-transparent text-body text-sm capitalize underline border-0 underline-offset-6 mt-4">Read
+                  More
+                  <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M6 18 18 6m0 0H9m9 0v9" />
+                  </svg>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-full transition-all hover:filter hover:drop-shadow-[6px_6px_8px_rgba(50,50,0,0.1)]">
+          <div
+            class="h-full bg-[#E6E7EB] transition-all hover:bg-blue p-0.5 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] relative">
+            <div
+              class="h-full bg-white pt-5 rounded-2xl xl:pt-8 pb-5 px-5 xl:px-10 [clip-path:polygon(0_0,100%_0,100%_calc(100%-49px),calc(100%-49px)_100%,0_100%)]">
+              <div class="text-center sm:text-start flex flex-col justify-between h-full">
+                <div class="flex items-center justify-center px-16"><img src="./src/assets/image/vapt.svg" alt="vapt">
+                </div>
+                <div class="content">
+                  <h3 class="mt-2.5 2xl:whitespace-nowrap">VAPT</h3>
+                <p class=" mt-3 ">Comprehensive testing to identify, analyze, and
+                  remediate security flaws.
+                </p>
+                <a href="service-details.html"
+                  class="btn-primary group inline-flex p-0 bg-transparent text-body text-sm capitalize underline border-0 underline-offset-6 mt-4">Read
+                  More
+                  <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M6 18 18 6m0 0H9m9 0v9" />
+                  </svg>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center mt-6 md:mt-12">
+        <button class="btn-primary group">Load More
+          <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M6 18 18 6m0 0H9m9 0v9" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--================= COMPEREHENSIVE CYBERSECURITY SOLUTIONS SECTION END ===================-->
+
+  <!--================= COMMITMENTS SECTION START ================= -->
+  <section class="py-12 md:py-[100px]">
+    <div class="container">
+      <div class="flex flex-col sm:flex-row justify-between mb-10 md:mb-20 gap-5">
+
+        <h2 class="w-full max-w-[841px]">Experience the <span class="text-[#2E78AC]">EIC difference</span>
+          in security and compliance excellence</h2>
+        <div class="flex items-center sm:max-w-[300px] w-full justify-center sm:justify-end">
+          <button class="btn-primary group">See All Features
+            <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 18 18 6m0 0H9m9 0v9" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="border-2 border-[#EBF3F8] rounded-[10px] shadow-3xl bg-bottom bg-contain bg-no-repeat"
+          style="background-image: url(./src/assets/image/commitment-item-bg.png);">
+          <div class="p-8 pb-10">
+            <div class="pr-4 md:pr-7 w-full max-w-[581px]">
+              <h3>Client-centric Approach</h3>
+              <p class="font-medium mt-4">Customized security strategies designed to address the specific challenges and
+                goals of each client, ensuring comprehensive protection and peace of mind. </p>
+            </div>
+            <div class="flex items-center justify-center mt-[30px]">
+              <div>
+                <img src="./src/assets/image/client.png" alt="client">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 border-[#EBF3F8] rounded-[10px] shadow-3xl bg-bottom bg-contain bg-no-repeat"
+          style="background-image: url(./src/assets/image/commitment-item-bg.png);">
+          <div class="p-8 pb-10">
+            <div class="pr-7">
+              <h3>Documentation Support</h3>
+              <p class="font-medium mt-4">Fast, professional support from leading trustworthy cybersecurity consultants.
+              </p>
+            </div>
+            <div class="flex items-center justify-center mt-[30px]">
+              <div>
+                <img src="./src/assets/image/document.png" alt="document">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 border-[#EBF3F8] rounded-[10px] shadow-3xl bg-bottom bg-contain bg-no-repeat"
+          style="background-image: url(./src/assets/image/commitment-item-bg.png);">
+          <div class="p-8 pb-10">
+            <div class="pr-7">
+              <h3>On-time Expert Response</h3>
+              <p class="font-medium mt-4">Fast, professional support from leading trustworthy cybersecurity consultants.
+              </p>
+            </div>
+            <div class="flex items-center justify-center mt-[30px]">
+              <div>
+                <img src="./src/assets/image/response.png" alt="response">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 border-[#EBF3F8] rounded-[10px] shadow-3xl bg-bottom bg-contain bg-no-repeat"
+          style="background-image: url(./src/assets/image/commitment-item-bg.png);">
+          <div class="p-8 pb-10">
+            <div class="pr-7">
+              <h3>Save Time</h3>
+              <p class="font-medium mt-4">Cybersecurity automation so you can focus on your core competencies.
+                Compliance workflows so you can focus on revenue, not regulations.</p>
+            </div>
+            <div class="flex items-center justify-center mt-[30px]">
+              <div>
+                <img src="./src/assets/image/time.png" alt="time">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--============= COMMITMENTS SECTION END ================-->
+
+  <!--================= COMMITMENTS SECTION START ================= -->
+  <section class="py-12 md:py-[100px] bg-contain bg-bottom-right bg-no-repeat"
+    style="background-image: url(./src/assets/image/compliance-bg.svg)">
+    <div class="container">
+      <div class="flex flex-col sm:flex-row justify-between mb-10 md:mb-20 gap-5">
+        <h2 class="sm:max-w-[636px] w-full">More Than <span class="text-[#2E78AC]">Compliance -</span>
+          Our Unique Commitments</h2>
+        <div class="flex items-center sm:max-w-[300px] w-full justify-center sm:justify-end">
+          <button class="btn-primary group">Secure your data with us
+            <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 18 18 6m0 0H9m9 0v9" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div
+          class="p-4 md:p-8 bg-white border border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+          <div class="max-w-10 md:max-w-[60px] w-full">
+            <img src="./src/assets/image/compliance-1.svg" alt="protection">
+          </div>
+
+          <h4 class="mt-4">Strategic Roadmaps</h4>
+          <ul class="protection-list mt-4">
+            <li>Operational Context Integration</li>
+            <li>Scope & CDE Precision Mapping</li>
+            <li>Risk-Prioritized</li>
+            <li>Technology Stack Alignment</li>
+            <li>Business-Objective Synergy</li>
+          </ul>
+        </div>
+        <div
+          class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+          <div class="max-w-10 md:max-w-[60px] w-full">
+            <img src="./src/assets/image/compliance-2.svg" alt="protection">
+          </div>
+
+          <h4 class="mt-4">Expert Partnership</h4>
+          <ul class="protection-list mt-4">
+            <li>Top-Tier Cybersecurity Experts</li>
+            <li>Tailored Security Strategies</li>
+            <li>24/7 Incident Response</li>
+            <li>Proactive Threat Hunting</li>
+            <li>Audit Reports</li>
+          </ul>
+        </div>
+        <div
+          class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+          <div class="max-w-10 md:max-w-[60px] w-full">
+            <img src="./src/assets/image/compliance-3.svg" alt="protection">
+          </div>
+
+
+          <h4 class="mt-4">Pristine Interactions</h4>
+          <ul class="protection-list mt-4">
+            <li>Single-Point-of-Contact Liaison</li>
+            <li>Unified Compliance Center</li>
+            <li>Streamlined Evidence Collection</li>
+            <li>Transparent Bundled Pricing</li>
+            <li>Minimal Internal Workload Design</li>
+          </ul>
+        </div>
+        <div
+          class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+          <div class="max-w-10 md:max-w-[60px] w-full">
+            <img src="./src/assets/image/compliance-4.svg" alt="protection">
+          </div>
+
+          <h4 class="mt-4">Data Assurance</h4>
+          <ul class="protection-list mt-4">
+            <li>Certified Secure Data Handling</li>
+            <li>Real-Time Audit Trail Visibility</li>
+            <li>Strict Confidentiality Protocols</li>
+            <li>Encrypted Evidence Repositories</li>
+            <li>Integrity Verification Controls</li>
+          </ul>
+        </div>
+        <div
+          class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+          <div class="max-w-10 md:max-w-[60px] w-full">
+            <img src="./src/assets/image/compliance-5.svg" alt="protection">
+          </div>
+
+
+
+          <h4 class="mt-4">Data Insights</h4>
+          <ul class="protection-list mt-4">
+            <li>Business-Aligned Risk Strategy</li>
+            <li>Actionable Mitigation Blueprints</li>
+            <li>Holistic Security Intelligence</li>
+            <li>Strategic C-Suite Dashboards</li>
+            <li>Proactive Security Trend Analysis</li>
+          </ul>
+        </div>
+        <div
+          class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+          <div class="max-w-10 md:max-w-[60px] w-full">
+            <img src="./src/assets/image/compliance-6.svg" alt="protection">
+          </div>
+
+          <h4 class="mt-4">Total Integration</h4>
+          <ul class="protection-list mt-4">
+            <li>Certification Management</li>
+            <li>Policy & Documentation Crafting</li>
+            <li>Team Awareness & Training</li>
+            <li>Multi-Factor Authentication</li>
+            <li>Privacy Vault Customization</li>
+          </ul>
+        </div>
+        <div
+          class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+          <div class="max-w-10 md:max-w-[60px] w-full">
+            <img src="./src/assets/image/compliance-7.svg" alt="protection">
+          </div>
+
+
+          <h4 class="mt-4">Cyber Certainty</h4>
+          <ul class="protection-list mt-4">
+            <li>Data Breach Response Services</li>
+            <li>Network Security Monitoring</li>
+            <li>Ransomware Protection Solutions</li>
+            <li>Vendor Risk Management</li>
+            <li>Regulatory Compliance Assistance</li>
+          </ul>
+        </div>
+        <div
+          class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+          <div class="max-w-10 md:max-w-[60px] w-full">
+            <img src="./src/assets/image/compliance-8.svg" alt="protection">
+          </div>
+
+          <h4 class="mt-4">Growth Mindset</h4>
+          <ul class="protection-list mt-4">
+            <li>Agile Transformation Strategies</li>
+            <li>Digital Capability Development</li>
+            <li>Cloud Migration Best Practices</li>
+            <li>Data-Driven Decision Making</li>
+            <li>Improved Customer Experience</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--============= COMMITMENTS SECTION END ================-->
+
+  <!-- ================= STAY COMPLIANT SECTION START ==================== -->
+  <section class="stay-compliant-section pb-12 md:pb-[100px]">
+    <div class="container">
+      <div
+        class="bg-blue pl-6 sm:pl-12 md:pl-[83px] pr-6 sm:pr-12 md:pr-[90px] rounded-2xl flex flex-col lg:flex-row items-center ">
+        <div class="w-full lg:max-w-[49.283%] xl:-mr-9 order-2 lg:order-1 mb-6 sm:mb-11 lg:mb-0">
+          <h2 class="text-white mb-6">Stay Compliant, Safeguard Your Business</h2>
+          <p class="text-white mb-8">Empower your business to thrive confidently in an ever-evolving regulatory and
+            threat landscape.</p>
+          <div class="flex flex-wrap items-center gap-4">
+            <button class="btn-secondary group">Get started with us
+              <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M6 18 18 6m0 0H9m9 0v9" />
+              </svg>
+            </button>
+            <button class="btn-primary group border border-white">Contact us
+              <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M6 18 18 6m0 0H9m9 0v9" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="w-full lg:max-w-[53.664%] mt-6 sm:mt-11 mb-8 sm:mb-16 lg:mb-[124px] order-1 lg:order-2">
+          <img src="./src/assets/image/stay-compliant.svg" alt="stay compliant">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= STAY COMPLIANT SECTION END ==================== -->
+
+
+  <!-- ================= FOOTER SECTION START ================= -->
+  <footer class="bg-body py-[30px] md:py-[60px]">
+    <div class="bg-contain bg-right bg-no-repeat" style="background-image: url(./src/assets/icon/footer-bg-icon.svg);">
+      <div class="container">
+        <div class="flex items-center justify-between border-b border-[#EBF3F833]/20 py-5">
+          <a class="w-full max-w-20 sm:max-w-[115px]" href="#">
+            <img class="w-full" src="./src/assets/logo/logo.svg" alt="logo">
+          </a>
+          <div class="flex flex-col sm:flex-row gap-2 sm:gap-7 text-white">
+            <div class="flex items-center gap-2 sm:gap-4">
+              <div class="w-full max-w-6 sm:max-w-full">
+                <img src="./src/assets/image/phone.svg" alt="phone">
+              </div>
+              <div class="flex flex-col">
+                <a class="text-sm sm:text-base" href="tel:+8809617204204">+8809617204204</a>
+                <a class="text-sm sm:text-base" href="tel:+880241082448">+880241082448</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 sm:gap-4">
+              <div class="w-full max-w-6 sm:max-w-full">
+                <img src="./src/assets/image/mail.svg" alt="mail">
+              </div>
+              <div class="flex flex-col items-center">
+                <a class="text-sm sm:text-base" href="mailto:info@eic.com.bd">info@eic.com.bd</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between pt-6 border-b border-[#EBF3F8]/20 pb-6 sm:pb-12 gap-10">
+          <div class="w-full max-w-[352px] text-white">
+            <p class="">Subscribe our newsletter for latest security related <br> knowledge</p>
+            <form action="#" class="mt-6">
+              <div class="flex items-center gap-1">
+                <input
+                  class="bg-white rounded-full focus:outline-0 text-sm leading-3.5 font-roboto py-[13px] px-4 text-[#142149] w-full max-w-[241px]"
+                  type="email" required placeholder="Enter your email">
+                <button class="text-base font-roboto font-medium leading-4 px-6 py-3 rounded-full bg-blue"
+                  type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="w-full max-w-[642px] flex justify-between flex-wrap gap-5 sm:gap-10 text-white">
+            <div class="menu">
+              <h5>Main Page</h5>
+              <ul class="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="case-study.html">Case Studies</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <h5>Services</h5>
+              <ul class="">
+                <li><a href="#">PCI DSS Compliance </a></li>
+                <li><a href="#">ISO 27001ISMS</a></li>
+                <li><a href="#">Swift CSP Assessment</a></li>
+                <li><a href="#">ISO 22301:2019</a></li>
+                <li><a href="faq.html">Penetration Testing</a></li>
+                <li><a href="#">IT/IS Audit</a></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <h5>Social link</h5>
+              <ul class="">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 items-center justify-between text-white pt-5 sm:pt-10">
+          <span class="text-white text-sm sm:text-base sm:leading-6 font-roboto font-medium">Powered by Ontik
+            Creative</span>
+          <div class="flex items-center gap-4">
+            <a href="privacy-polici.html"
+              class="text-white text-sm sm:text-base sm:leading-6 font-roboto font-medium transition-all hover:text-white/50">Privacy
+              Policy</a>
+            <span class="w-0.5 h-3 bg-white"></span>
+            <a href="terms-condition.html"
+              class="text-white text-sm sm:text-base sm:leading-6 font-roboto font-medium transition-all hover:text-white/50">Terms
+              & Condition</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- ================= FOOTER SECTION END ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

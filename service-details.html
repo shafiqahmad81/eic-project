@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <title>eic | service details</title>
+</head>
+
+<body>
+
+  <!--=============== HEADER SECTION START ==================-->
+  <header class="py-[54px] sticky top-0 left-0 right-0 bg-white z-50 transition-all duration-500 ease-in-out">
+    <div class="container">
+      <div class="flex items-center justify-between gap-2">
+        <a href="index.html" class="w-16 md:w-auto">
+          <img src="./src/assets/logo/logo.svg" alt="Logo icon">
+        </a>
+        <nav id="nav-area"
+          class="absolute top-0 left-[-9999px] right-0 bg-white lg:bg-transparent w-full h-screen lg:h-auto lg:w-auto lg:static flex items-center flex-col justify-between lg:block py-10 lg:py-0 transition-all duration-500 ease-in-ou overflow-y-auto">
+          <ul class="header-nav flex flex-col lg:flex-row items-center justify-center flex-wrap">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html" class="active-item">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="lg:hidden flex items-center justify-center">
+            <button class="btn-primary group">Schedule a Call
+              <svg class="transition-all group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M6 18 18 6m0 0H9m9 0v9" />
+              </svg>
+            </button>
+          </div>
+          <div id="close-icon" class="w-6 absolute top-5 right-5 lg:hidden">
+            <button class="w-full">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0"
+                y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                <g>
+                  <path fill="#000000" fill-rule="evenodd"
+                    d="M5 17.586a1 1 0 1 0 1.415 1.415L12 13.414 17.586 19A1 1 0 0 0 19 17.586L13.414 12 19 6.414A1 1 0 0 0 17.585 5L12 10.586 6.414 5A1 1 0 0 0 5 6.414L10.586 12z"
+                    clip-rule="evenodd" opacity="1" data-original="#000000" class=" w-full"></path>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <div class="hidden lg:block min-w-[210px]">
+          <button class="btn-primary group">Schedule a Call
+            <svg class="transition-all duration-500 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 18 18 6m0 0H9m9 0v9" />
+            </svg>
+          </button>
+        </div>
+        <div id="hambargur-icon" class="block lg:hidden w-8">
+          <button class="w-8">
+            <svg class="w-full" xmlns="http://www.w3.org/2000/svg" version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64"
+              style="enable-background:new 0 0 512 512" xml:space="preserve">
+              <g>
+                <g data-name="4">
+                  <path
+                    d="M57 30H7a2 2 0 0 0 0 4h50a2 2 0 0 0 0-4zM7 19h50a2 2 0 0 0 0-4H7a2 2 0 0 0 0 4zM57 45H7a2 2 0 0 0 0 4h50a2 2 0 0 0 0-4z"
+                    fill="#000000" opacity="1" data-original="#000000"></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--=============== HEADER SECTION END ===============-->
+
+  <!--=============== BANNER SECTION START ===============-->
+  <section
+    class="banner-section bg-blue [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-60px)_100%,0_100%)] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-100px),calc(100%-150px)_100%,0_100%)]">
+    <div class="container">
+      <div class="bg-bottom bg-contain bg-no-repeat" style="background-image: url(./src/assets/image/banner-img.svg);">
+        <div class="max-w-[740px] mx-auto py-10 sm:py-20 md:py-40 lg:py-[232px] text-white text-center ">
+          <h1 class="uppercase">PCI DSS Compliance </h1>
+          <p
+            class="text-base sm:text-lg md:text-2xl md:leading-8 font-spacegrotesk mt-4 sm:mt-8 w-full max-w-[626px] mx-auto">
+            EIC the digital world by delivering innovative security solutions & promoting cybersecurity awareness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--============== BANNER SECTION END ==============-->
+
+  <!--============== HELPING YOU ACHIEVE SECTION START ================-->
+  <section class="py-12 md:py-[100px]">
+    <div class="container">
+      <h2 class="w-full max-w-[692px]">Helping You Achieve and Maintain Payment <span class="text-blue">Card Data
+          Security Standards.</span></h2>
+      <div class="mt-6 md:mt-12">
+        <div class="flex flex-col sm:flex-row items-center gap-14 mb-12 md:mb-24">
+          <div class="w-full max-w-[215px]">
+            <img src="./src/assets/image/pci-image-1.svg" alt="pci">
+          </div>
+          <div class="space-y-6 w-full max-w-[800px] text-center sm:text-start">
+            <h3>What is PCI DSS Compliance?</h3>
+            <p>Our PCI DSS compliance approach is holistic, addressing every aspect of payment data security—from card
+              data discovery and network segmentation to vulnerability management and access control. As organizations
+              face evolving threats and regulatory demands, we provide tailored compliance roadmaps, ensuring efficiency
+              and relevance at every stage. Our experts also perform ASV scans, VAPT, and continuous monitoring to
+              maintain adherence and safeguard customer trust.</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-14 mb-12 md:mb-24">
+          <div class="w-full max-w-[215px]">
+            <img src="./src/assets/image/pci-image-2.svg" alt="pci">
+          </div>
+          <div class="space-y-6 w-full max-w-[800px] text-center sm:text-start">
+            <h3>Ensure Safe Payments. Maintain Standards. Build Trust.</h3>
+            <p>PCI DSS standards ensure companies that handle credit card data—acceptance, processing, storage, or
+              transmission—maintain a secure ecosystem. EIC offers comprehensive solutions to achieve and maintain PCI
+              DSS compliance, safeguarding your business and customer trust.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--============= HELPING YOU ACHIEVE SECTION END ================-->
+
+  <!--============== OUR SERVICES INCLIDE SECTION START ===============-->
+
+  <section class="bg-blue pt-12 md:pt-[100px] pb-11 md:pb-[90px]">
+    <div class="container">
+      <div class=" text-white">
+        <div class="mb-10 md:mb-[114px] w-full max-w-[668px]">
+          <h2 class="text-white max-w-[602px] mb-4 md:mb-6">Our PCI DSS Compliance Services Include</h2>
+          <p class="text-base sm:text-lg md:text-2xl md:leading-8 font-normal font-spacegrotesk">Comprehensive solutions
+            for achieving and maintaining PCI DSS compliance.</p>
+        </div>
+        <div class="flex items-start justify-between gap-[91px]">
+          <div class="w-full max-w-[272px] flex flex-col items-start justify-between h-full gap-6">
+            <div class="w-full max-w-11 sm:max-w-[60px]">
+              <img src="./src/assets/image/companies-secured.svg" alt="companies security">
+            </div>
+            <div class="flex flex-col justify-between">
+              <h4 class="text-white">PCI DSS Audit & Certification</h4>
+              <div class="">
+                <div class="h-0.5 w-full lg:max-w-full bg-white/30 mt-4"></div>
+                <p class="text-sm sm:text-base mt-4">We conduct official assessments led by Qualified Security Assessors
+                  (QSAs) to validate your organization’s PCI DSS compliance. Our team prepares the formal Report on
+                  Compliance (ROC), the document required by card brands, ensuring your business meets all mandated
+                  security standards with confidence.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full max-w-[272px] flex flex-col items-start gap-6">
+            <div class="w-full max-w-11 sm:max-w-[60px]">
+              <img src="./src/assets/image/companies-secured.svg" alt="companies security">
+            </div>
+            <div class="">
+              <h4 class="text-white">PCI DSS Readiness Assessment</h4>
+              <div class="h-0.5 w-full lg:max-w-full bg-white/30 mt-4"></div>
+              <p class="text-sm sm:text-base mt-4">We conduct official assessments led by Qualified Security Assessors
+                (QSAs) to validate your organization’s PCI DSS compliance. Our team prepares the formal Report on
+                Compliance (ROC), the document required by card brands, ensuring your business meets all mandated
+                security standards with confidence.</p>
+            </div>
+          </div>
+          <div class="w-full max-w-[272px] flex flex-col items-start gap-6">
+            <div class="w-full max-w-11 sm:max-w-[60px]">
+              <img src="./src/assets/image/companies-secured.svg" alt="companies security">
+            </div>
+            <div class="">
+              <h4 class="text-white">Vulnerability Management & Scanning</h4>
+              <div class="h-0.5 w-full lg:max-w-full bg-white/30 mt-4"></div>
+              <p class="text-sm sm:text-base mt-4">We conduct official assessments led by Qualified Security Assessors
+                (QSAs) to validate your organization’s PCI DSS compliance. Our team prepares the formal Report on
+                Compliance (ROC), the document required by card brands, ensuring your business meets all mandated
+                security standards with confidence.</p>
+            </div>
+          </div>
+          <div class="w-full max-w-[272px] flex flex-col items-start gap-6">
+            <div class="w-full max-w-11 sm:max-w-[60px]">
+              <img src="./src/assets/image/companies-secured.svg" alt="companies security">
+            </div>
+            <div class="">
+              <h4 class="text-white">Penetration Testing</h4>
+              <div class="h-0.5 w-full lg:max-w-full bg-white/30 mt-4"></div>
+              <p class="text-sm sm:text-base mt-4">We conduct official assessments led by Qualified Security Assessors
+                (QSAs) to validate your organization’s PCI DSS compliance. Our team prepares the formal Report on
+                Compliance (ROC), the document required by card brands, ensuring your business meets all mandated
+                security standards with confidence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=============== OUR SERVICES INCLIDE SECTION END =================-->
+
+  <!-- ================ NAVIGATE PCI DSS COMOLIANCE SECTION START ================ -->
+
+  <!-- <section class="flex">
+    <div class="w-1/2"></div>
+    <div class="w-1/2"></div>
+  </section> -->
+  <section class="why-choose pt-20 relative overflow-hidden">
+    <div class="container relative z-10 flex flex-col md:flex-row items-center  sm:justify-between 2xl:min-h-[782px]">
+      <div class="w-full max-w-[450px] order-2 md:order-1 mt-10 sm:pt-20">
+        <h2>Experience the <span class="text-blue">EIC Impact</span></h2>
+        <ul class="mt-8">
+          <li>Advanced Threat Protection</li>
+          <li>Real-Time Incident Response</li>
+          <li>Dedicated Expert Support</li>
+          <li>Tailored Security Solutions</li>
+          <li>Proven Security Track Record</li>
+        </ul>
+        <a href="#" class="btn-primary group inline-flex mt-10">Secure Your DATA
+          <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M6 18 18 6m0 0H9m9 0v9" />
+          </svg>
+        </a>
+      </div>
+      <div class="relative order-1 md:order-2 ">
+
+        <!-- <div class="bg-blue h-[422px] w-dvw rounded-[30px] skew-x-12 -skew-y-12 -translate-y-[140px]">
+          <div class="w-full max-w-[536px] relative z-10">
+            <img src="./src/assets/image/navigate-image.svg" alt="navigate-image">
+          </div>
+        </div> -->
+        <div>
+          <img src="./src/assets/image/navigate-pci.png" alt="navigate-image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ NAVIGATE PCI DSS COMOLIANCE SECTION END ================ -->
+
+  <!--================= COMMITMENTS SECTION START ================= -->
+  <section class="py-[300px] bg-contain bg-left-top bg-no-repeat"
+    style="background-image: url(./src/assets/image/trusted-for-proven.png);">
+    <div class="my-12 md:my-[100px] bg-contain bg-bottom-right bg-no-repeat"
+      style="background-image: url(./src/assets/image/compliance-bg.svg)">
+      <div class="container">
+        <div class="flex flex-col sm:flex-row justify-between mb-10 md:mb-20 gap-5">
+          <h2 class="sm:max-w-[636px] w-full">More Than <span class="text-[#2E78AC]">Compliance -</span>
+            Our Unique Commitments</h2>
+          <div class="flex items-center sm:max-w-[300px] w-full justify-center sm:justify-end">
+            <button class="btn-primary group">Secure your data with us
+              <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M6 18 18 6m0 0H9m9 0v9" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div
+            class="p-4 md:p-8 bg-white border border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+            <div class="max-w-10 md:max-w-[60px] w-full">
+              <img src="./src/assets/image/compliance-1.svg" alt="protection">
+            </div>
+
+            <h4 class="mt-4">Strategic Roadmaps</h4>
+            <ul class="protection-list mt-4">
+              <li>Operational Context Integration</li>
+              <li>Scope & CDE Precision Mapping</li>
+              <li>Risk-Prioritized</li>
+              <li>Technology Stack Alignment</li>
+              <li>Business-Objective Synergy</li>
+            </ul>
+          </div>
+          <div
+            class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+            <div class="max-w-10 md:max-w-[60px] w-full">
+              <img src="./src/assets/image/compliance-2.svg" alt="protection">
+            </div>
+
+            <h4 class="mt-4">Expert Partnership</h4>
+            <ul class="protection-list mt-4">
+              <li>Top-Tier Cybersecurity Experts</li>
+              <li>Tailored Security Strategies</li>
+              <li>24/7 Incident Response</li>
+              <li>Proactive Threat Hunting</li>
+              <li>Audit Reports</li>
+            </ul>
+          </div>
+          <div
+            class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+            <div class="max-w-10 md:max-w-[60px] w-full">
+              <img src="./src/assets/image/compliance-3.svg" alt="protection">
+            </div>
+
+
+            <h4 class="mt-4">Pristine Interactions</h4>
+            <ul class="protection-list mt-4">
+              <li>Single-Point-of-Contact Liaison</li>
+              <li>Unified Compliance Center</li>
+              <li>Streamlined Evidence Collection</li>
+              <li>Transparent Bundled Pricing</li>
+              <li>Minimal Internal Workload Design</li>
+            </ul>
+          </div>
+          <div
+            class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+            <div class="max-w-10 md:max-w-[60px] w-full">
+              <img src="./src/assets/image/compliance-4.svg" alt="protection">
+            </div>
+
+            <h4 class="mt-4">Data Assurance</h4>
+            <ul class="protection-list mt-4">
+              <li>Certified Secure Data Handling</li>
+              <li>Real-Time Audit Trail Visibility</li>
+              <li>Strict Confidentiality Protocols</li>
+              <li>Encrypted Evidence Repositories</li>
+              <li>Integrity Verification Controls</li>
+            </ul>
+          </div>
+          <div
+            class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+            <div class="max-w-10 md:max-w-[60px] w-full">
+              <img src="./src/assets/image/compliance-5.svg" alt="protection">
+            </div>
+
+
+
+            <h4 class="mt-4">Data Insights</h4>
+            <ul class="protection-list mt-4">
+              <li>Business-Aligned Risk Strategy</li>
+              <li>Actionable Mitigation Blueprints</li>
+              <li>Holistic Security Intelligence</li>
+              <li>Strategic C-Suite Dashboards</li>
+              <li>Proactive Security Trend Analysis</li>
+            </ul>
+          </div>
+          <div
+            class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+            <div class="max-w-10 md:max-w-[60px] w-full">
+              <img src="./src/assets/image/compliance-6.svg" alt="protection">
+            </div>
+
+            <h4 class="mt-4">Total Integration</h4>
+            <ul class="protection-list mt-4">
+              <li>Certification Management</li>
+              <li>Policy & Documentation Crafting</li>
+              <li>Team Awareness & Training</li>
+              <li>Multi-Factor Authentication</li>
+              <li>Privacy Vault Customization</li>
+            </ul>
+          </div>
+          <div
+            class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+            <div class="max-w-10 md:max-w-[60px] w-full">
+              <img src="./src/assets/image/compliance-7.svg" alt="protection">
+            </div>
+
+
+            <h4 class="mt-4">Cyber Certainty</h4>
+            <ul class="protection-list mt-4">
+              <li>Data Breach Response Services</li>
+              <li>Network Security Monitoring</li>
+              <li>Ransomware Protection Solutions</li>
+              <li>Vendor Risk Management</li>
+              <li>Regulatory Compliance Assistance</li>
+            </ul>
+          </div>
+          <div
+            class="p-4 md:p-8 border bg-white border-[#E6E7EB] rounded-[10px] transition-all hover:shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]">
+            <div class="max-w-10 md:max-w-[60px] w-full">
+              <img src="./src/assets/image/compliance-8.svg" alt="protection">
+            </div>
+
+            <h4 class="mt-4">Growth Mindset</h4>
+            <ul class="protection-list mt-4">
+              <li>Agile Transformation Strategies</li>
+              <li>Digital Capability Development</li>
+              <li>Cloud Migration Best Practices</li>
+              <li>Data-Driven Decision Making</li>
+              <li>Improved Customer Experience</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--============= COMMITMENTS SECTION END ================-->
+
+  <section class="relative z-10 pb-5 md:pb-10 -mt-[280px]">
+    <div class="container">
+      <div class="flex flex-col lg:flex-row  gap-5 justify-between">
+        <div class="w-full lg:max-w-[37.720%] pr-9 mt-8 lg:mt-16 xl:mt-28">
+          <h2 class="text-2xl sm:text-3xl md:text-[40px] md:leading-12 w-full lg:w-[500px] xl:w-[610px]">Securing <span
+              class="text-blue">Top</span> Brands</h2>
+          <p
+            class=" text-base sm:text-xl md:text-2xl md:leading-8 text-[#245E86] mt-2 sm:mt-3 mb-3 sm:mb-6 w-full lg:w-[400px] xl:w-[610px] font-spacegrotesk">
+            Trusted by nearly 200+ Companies</p>
+
+          <div class="btn-wrap">
+            <button class="btn-primary group">Get Started
+              <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M6 18 18 6m0 0H9m9 0v9" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="w-full lg:max-w-[calc(100%-37.720%)] flex flex-col items-end">
+          <div class="w-[71.074%] border border-[#F4F4F6] rounded-xl sm:rounded-3xl p-2 sm:p-[17px]">
+            <div
+              class="bg-[#F4F4F6] flex items-center justify-between gap-5 px-2 sm:px-[30px] py-3 sm:py-5 rounded-md sm:rounded-[10px]">
+              <a href="#"><img src="./src/assets/logo/ieps.svg" alt="ieps"></a>
+              <a href="#"><img src="./src/assets/logo/foodi.svg" alt="foodi"></a>
+              <a href="#"><img src="./src/assets/logo/nccbank.svg" alt="nccbank"></a>
+            </div>
+          </div>
+          <div class="w-[79.811%] border border-[#F4F4F6] rounded-xl sm:rounded-3xl p-2 sm:p-[17px]">
+            <div
+              class="bg-[#F4F4F6] flex items-center justify-between px-2 sm:px-[30px] py-3 sm:py-5 rounded-md sm:rounded-[10px] gap-2">
+              <a href="#"><img src="./src/assets/logo/cartup.svg" alt="cartup"></a>
+              <a href="#"><img src="./src/assets/logo/city-bank.svg" alt="city bank logo"></a>
+              <a href="#"><img src="./src/assets/logo/honda.svg" alt="honda"></a>
+              <a href="#"><img src="./src/assets/logo/dhaka-bank.svg" alt="dhaka-bank"></a>
+            </div>
+          </div>
+          <div class="w-[88.548%] border border-[#F4F4F6] rounded-xl sm:rounded-3xl p-2 sm:p-[17px]">
+            <div
+              class="bg-[#F4F4F6] flex items-center justify-between px-2 sm:px-[30px] py-3 sm:py-5 rounded-md sm:rounded-[10px] gap-2">
+              <a href="#"><img src="./src/assets/logo/ipdc.svg" alt="ipdc"></a>
+              <a href="#"><img src="./src/assets/logo/sheba.svg" alt="sheba"></a>
+              <a href="#"><img src="./src/assets/logo/dg-e-pay.svg" alt="dg-e-pay"></a>
+              <a href="#"><img src="./src/assets/logo/janata-bank.svg" alt="janata-bank"></a>
+              <a href="#"><img src="./src/assets/logo/rkub.svg" alt="rkub"></a>
+            </div>
+          </div>
+          <div class="w-[98.348%] border border-[#F4F4F6] rounded-xl sm:rounded-3xl p-2 sm:p-[17px]">
+            <div
+              class="bg-[#F4F4F6] flex items-center justify-between px-2 sm:px-[30px] py-3 sm:py-5 rounded-md sm:rounded-[10px] gap-2">
+              <a href="#"><img src="./src/assets/logo/midlandbank.svg" alt="midlandbank"></a>
+              <a href="#"><img src="./src/assets/logo/ultrabank.svg" alt="ultrabank"></a>
+              <a href="#"><img src="./src/assets/logo/gnr.svg" alt="gnr logo"></a>
+              <a href="#"><img src="./src/assets/logo/shurjopay.svg" alt="shurjopay"></a>
+              <a href="#"><img src="./src/assets/logo/nrbcbank.svg" alt="nrbcbank"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--============== OUR PCI DSS SECTION START ===============-->
+
+  <section class="bg-blue pt-12 md:pt-[100px] pb-11 md:pb-[90px]">
+    <div class="container">
+      <div class="mb-5 md:mb-10 w-full max-w-[668px]">
+        <h2 class="text-white max-w-[602px] mb-4 md:mb-6">Our PCI DSS Compliance Services Include</h2>
+        <p class="text-white text-base sm:text-lg md:text-2xl md:leading-8 font-normal font-spacegrotesk">Everything you need to become and stay PCI DSS compliant — all in one place.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-8 lg:gap-x-16 xl:gap-x-[125px] gap-y-5 md:gap-y-9">
+        <div class="flex flex-col justify-between gap-1 pr-4">
+          <h2 class="text-6xl md:text-[88px] font-bold bg-linear-to-b from-white to-blue bg-clip-text text-transparent font-sans">1</h2>
+          <div class="content">
+            <h4 class="text-white">Initial Consultation</h4>
+            <div class="h-0.5 w-full bg-white/30 mt-4"></div>
+            <p class="text-white text-sm sm:text-base my-4">We begin by thoroughly examining your existing security protocols to determine their alignment with PCI DSS standards, pinpointing areas for enhancement and providing a solid base for achieving full compliance.</p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between gap-1 pr-4">
+          <h2 class="text-6xl md:text-[88px] font-bold bg-linear-to-b from-white to-blue bg-clip-text text-transparent font-sans">2</h2>
+          <div class="content">
+            <h4 class="text-white">Initial Consultation</h4>
+            <div class="h-0.5 w-full bg-white/30 mt-4"></div>
+            <p class="text-white text-sm sm:text-base my-4">We begin by thoroughly examining your existing security protocols to determine their alignment with PCI DSS standards, pinpointing areas for enhancement and providing a solid base for achieving full compliance.</p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between gap-1 pr-4">
+          <h2 class="text-6xl md:text-[88px] font-bold bg-linear-to-b from-white to-blue bg-clip-text text-transparent font-sans">3</h2>
+          <div class="content">
+            <h4 class="text-white">Initial Consultation</h4>
+            <div class="h-0.5 w-full bg-white/30 mt-4"></div>
+            <p class="text-white text-sm sm:text-base my-4">We begin by thoroughly examining your existing security protocols to determine their alignment with PCI DSS standards, pinpointing areas for enhancement and providing a solid base for achieving full compliance.</p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between gap-1 pr-4">
+          <h2 class="text-6xl md:text-[88px] font-bold bg-linear-to-b from-white to-blue bg-clip-text text-transparent font-sans">4</h2>
+          <div class="content">
+            <h4 class="text-white">Initial Consultation</h4>
+            <div class="h-0.5 w-full bg-white/30 mt-4"></div>
+            <p class="text-white text-sm sm:text-base my-4">We begin by thoroughly examining your existing security protocols to determine their alignment with PCI DSS standards, pinpointing areas for enhancement and providing a solid base for achieving full compliance.</p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between gap-1 pr-4">
+          <h2 class="text-6xl md:text-[88px] font-bold bg-linear-to-b from-white to-blue bg-clip-text text-transparent font-sans">5</h2>
+          <div class="content">
+            <h4 class="text-white">Initial Consultation</h4>
+            <div class="h-0.5 w-full bg-white/30 mt-4"></div>
+            <p class="text-white text-sm sm:text-base my-4">We begin by thoroughly examining your existing security protocols to determine their alignment with PCI DSS standards, pinpointing areas for enhancement and providing a solid base for achieving full compliance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=============== OUR PCI DSS SECTION END =================-->
+
+  <!--================= COMPEREHENSIVE CYBERSECURITY SOLUTIONS SECTION START ===================-->
+  <section class="mt-12 md:mt-[100px] pb-6 md:pb-12 lg:pb-[164px] bg-contain bg-top-right bg-no-repeat"
+    style="background-image: url(./src/assets/image/finger.svg);">
+    <div class="container">
+      <div class="w-full max-w-[588px] mx-auto">
+        <h2 class="text-center">Comprehensive Cybersecurity Solutions</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div
+          class="h-full transition-all hover:filter hover:drop-shadow-[6px_6px_8px_rgba(50,50,0,0.1)]">
+          <div
+            class="h-full bg-[#E6E7EB] transition-all hover:bg-blue p-0.5 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] relative">
+            <div
+              class="h-full bg-white rounded-2xl pt-5 xl:pt-8 pb-5 xl:pb-6 pl-6 xl:pl-10 pr-5 xl:pr-8 [clip-path:polygon(0_0,100%_0,100%_calc(100%-49px),calc(100%-49px)_100%,0_100%)]">
+              <div class="text-center sm:text-start">
+                <div class="flex items-center justify-center px-16"><img src="./src/assets/image/pci.svg" alt="pci">
+                </div>
+                <h3 class="mt-2.5">PCI DSS Compliance </h3>
+                <p class=" mt-3 mx-auto sm:mx-0">
+                  Comprehensive assessments for cardholder data environments, ensuring compliance from scoping to
+                  attestation.
+                </p>
+                <a href="service-details.html"
+                  class="btn-primary group inline-flex p-0 bg-transparent text-body text-sm capitalize underline border-0 underline-offset-6 mt-4">Read
+                  More
+                  <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M6 18 18 6m0 0H9m9 0v9" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-full transition-all hover:filter hover:drop-shadow-[6px_6px_8px_rgba(50,50,0,0.1)]">
+          <div
+            class="h-full bg-[#E6E7EB] transition-all hover:bg-blue p-0.5 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] relative">
+            <div
+              class="h-full bg-white rounded-2xl pt-5 xl:pt-8 pb-5 xl:pb-6 pl-6 xl:pl-10 pr-5 xl:pr-8 [clip-path:polygon(0_0,100%_0,100%_calc(100%-49px),calc(100%-49px)_100%,0_100%)]">
+              <div class="text-center sm:text-start">
+                <div class="flex items-center justify-center px-16"><img src="./src/assets/image/iso.svg" alt="iso">
+                </div>
+                <h3 class="mt-2.5">ISO 27001 ISMS</h3>
+                <p class=" mt-3 mx-auto sm:mx-0">Thorough guidance to manage information security,
+                  ensuring organizations protect data systematically and cost-effectively.
+                </p>
+                <a href="service-details.html"
+                  class="btn-primary group inline-flex p-0 bg-transparent text-body text-sm capitalize underline border-0 underline-offset-6 mt-4">Read
+                  More
+                  <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M6 18 18 6m0 0H9m9 0v9" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-full transition-all hover:filter hover:drop-shadow-[6px_6px_8px_rgba(50,50,0,0.1)]">
+          <div
+            class="h-full bg-[#E6E7EB] transition-all hover:bg-blue p-0.5 rounded-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] relative">
+            <div
+              class="h-full bg-white rounded-2xl pt-5 xl:pt-8 pb-5 xl:pb-6 pl-6 xl:pl-10 pr-5 xl:pr-8 [clip-path:polygon(0_0,100%_0,100%_calc(100%-49px),calc(100%-49px)_100%,0_100%)]">
+              <div class="text-center sm:text-start">
+                <div class="flex items-center justify-center px-16"><img src="./src/assets/image/swift.svg" alt="swift">
+                </div>
+                <h3 class="mt-2.5 2xl:whitespace-nowrap">Swift CSP Assessment</h3>
+                <p class=" mt-3 mx-auto sm:mx-0"> Security evaluation & remediation aligning with
+                  control objectives to secure cross-border transactions.
+                </p>
+                <a href="service-details.html"
+                  class="btn-primary group inline-flex p-0 bg-transparent text-body text-sm capitalize underline border-0 underline-offset-6 mt-4">Read
+                  More
+                  <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M6 18 18 6m0 0H9m9 0v9" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center mt-6 md:mt-12">
+        <button class="btn-primary group">View All Services
+          <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M6 18 18 6m0 0H9m9 0v9" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--================= COMPEREHENSIVE CYBERSECURITY SOLUTIONS SECTION END ===================-->
+
+  <!-- ================ FAQS ESSEBTIALS OF PCI DSS SECTION START ==================== -->
+   <section class="pb-12 md:pb-[100px]">
+    <div class="container">
+      <h2 class="w-full max-w-[458px] mx-auto lg:mx-0 text-center lg:text-start"><span class="text-blue">FAQs</span> Essentials of PCI DSS Compliance</h2>
+      <div class="flex flex-col lg:flex-row items-center ">
+        <div class="w-full lg:max-w-[60.955%] order-2 lg:order-1">
+            <div class="w-full max-w-[696px] space-y-4 mt-10 md:mt-20">
+              <div class="faq-item">
+                <div class="faq-content">
+                  <h4>How does cybersecurity support PCI DSS compliance?</h4>
+                  <p class="mt-2 text-sm sm:text-base">Cybersecurity supports PCI DSS compliance by protecting sensitive payment card data from breaches and unauthorized access.
+                  </p>
+                </div>
+                <div class="faq-icon">
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-content">
+                  <h4>Do you offer customized security solutions?</h4>
+                  <p class="mt-2 text-sm sm:text-base">Cybersecurity supports PCI DSS compliance by protecting sensitive payment card data from breaches and unauthorized access.
+                  </p>
+                </div>
+                <div class="faq-icon">
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-content">
+                  <h4>What types of cybersecurity services do you offer?</h4>
+                  <p class="mt-2 text-sm sm:text-base">Cybersecurity supports PCI DSS compliance by protecting sensitive payment card data from breaches and unauthorized access.
+                  </p>
+                </div>
+                <div class="faq-icon">
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-content">
+                  <h4>How does your 24/7 threat monitoring work?</h4>
+                  <p class="mt-2 text-sm sm:text-base">Cybersecurity supports PCI DSS compliance by protecting sensitive payment card data from breaches and unauthorized access.
+                  </p>
+                </div>
+                <div class="faq-icon">
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-content">
+                  <h4>What happens if my business experiences a cyberattack?</h4>
+                  <p class="mt-2 text-sm sm:text-base">Cybersecurity supports PCI DSS compliance by protecting sensitive payment card data from breaches and unauthorized access.
+                  </p>
+                </div>
+                <div class="faq-icon">
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <div class="w-full lg:max-w-[calc(100%-60.955%)] order-1 lg:order-2">
+          <video autoplay muted loop playsinline src="./src/assets/videos/faq-page.mp4"></video>
+        </div>
+      </div>
+    </div>
+   </section>
+  <!-- ================ FAQS ESSEBTIALS OF PCI DSS SECTION END ==================== -->
+
+  <!-- ================= STAY COMPLIANT SECTION START ==================== -->
+  <section class="stay-compliant-section pb-12 md:pb-[100px]">
+    <div class="container">
+      <div
+        class="bg-blue pl-6 sm:pl-12 md:pl-[83px] pr-6 sm:pr-12 md:pr-[90px] rounded-2xl flex flex-col lg:flex-row items-center ">
+        <div class="w-full lg:max-w-[49.283%] xl:-mr-9 order-2 lg:order-1 mb-6 sm:mb-11 lg:mb-0">
+          <h2 class="text-white mb-6">Stay Compliant, Safeguard Your Business</h2>
+          <p class="text-white mb-8">Empower your business to thrive confidently in an ever-evolving regulatory and
+            threat landscape.</p>
+          <div class="flex flex-wrap items-center gap-4">
+            <button class="btn-secondary group">Get started with us
+              <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M6 18 18 6m0 0H9m9 0v9" />
+              </svg>
+            </button>
+            <button class="btn-primary group border border-white">Contact us
+              <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M6 18 18 6m0 0H9m9 0v9" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="w-full lg:max-w-[53.664%] mt-6 sm:mt-11 mb-8 sm:mb-16 lg:mb-[124px] order-1 lg:order-2">
+          <img src="./src/assets/image/stay-compliant.svg" alt="stay compliant">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= STAY COMPLIANT SECTION END ==================== -->
+
+
+  <!-- ================= FOOTER SECTION START ================= -->
+  <footer class="bg-body py-[30px] md:py-[60px]">
+    <div class="bg-contain bg-right bg-no-repeat" style="background-image: url(./src/assets/icon/footer-bg-icon.svg);">
+      <div class="container">
+        <div class="flex items-center justify-between border-b border-[#EBF3F833]/20 py-5">
+          <a class="w-full max-w-20 sm:max-w-[115px]" href="#">
+            <img class="w-full" src="./src/assets/logo/logo.svg" alt="logo">
+          </a>
+          <div class="flex flex-col sm:flex-row gap-2 sm:gap-7 text-white">
+            <div class="flex items-center gap-2 sm:gap-4">
+              <div class="w-full max-w-6 sm:max-w-full">
+                <img src="./src/assets/image/phone.svg" alt="phone">
+              </div>
+              <div class="flex flex-col">
+                <a class="text-sm sm:text-base" href="tel:+8809617204204">+8809617204204</a>
+                <a class="text-sm sm:text-base" href="tel:+880241082448">+880241082448</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 sm:gap-4">
+              <div class="w-full max-w-6 sm:max-w-full">
+                <img src="./src/assets/image/mail.svg" alt="mail">
+              </div>
+              <div class="flex flex-col items-center">
+                <a class="text-sm sm:text-base" href="mailto:info@eic.com.bd">info@eic.com.bd</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between pt-6 border-b border-[#EBF3F8]/20 pb-6 sm:pb-12 gap-10">
+          <div class="w-full max-w-[352px] text-white">
+            <p class="">Subscribe our newsletter for latest security related <br> knowledge</p>
+            <form action="#" class="mt-6">
+              <div class="flex items-center gap-1">
+                <input
+                  class="bg-white rounded-full focus:outline-0 text-sm leading-3.5 font-roboto py-[13px] px-4 text-[#142149] w-full max-w-[241px]"
+                  type="email" required placeholder="Enter your email">
+                <button class="text-base font-roboto font-medium leading-4 px-6 py-3 rounded-full bg-blue"
+                  type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="w-full max-w-[642px] flex justify-between flex-wrap gap-5 sm:gap-10 text-white">
+            <div class="menu">
+              <h5>Main Page</h5>
+              <ul class="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="case-study.html">Case Studies</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <h5>Services</h5>
+              <ul class="">
+                <li><a href="#">PCI DSS Compliance </a></li>
+                <li><a href="#">ISO 27001ISMS</a></li>
+                <li><a href="#">Swift CSP Assessment</a></li>
+                <li><a href="#">ISO 22301:2019</a></li>
+                <li><a href="#">Penetration Testing</a></li>
+                <li><a href="#">IT/IS Audit</a></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <h5>Social link</h5>
+              <ul class="">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 items-center justify-between text-white pt-5 sm:pt-10">
+          <span class="text-white text-sm sm:text-base sm:leading-6 font-roboto font-medium">Powered by Ontik
+            Creative</span>
+          <div class="flex items-center gap-4">
+            <a href="privacy-polici.html"
+              class="text-white text-sm sm:text-base sm:leading-6 font-roboto font-medium transition-all hover:text-white/50">Privacy
+              Policy</a>
+            <span class="w-0.5 h-3 bg-white"></span>
+            <a href="terms-condition.html"
+              class="text-white text-sm sm:text-base sm:leading-6 font-roboto font-medium transition-all hover:text-white/50">Terms
+              & Condition</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- ================= FOOTER SECTION END ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+  <script>
+       
+const accordianItems = document.querySelectorAll(".faq-item");
+
+if (accordianItems.length > 0) {
+  accordianItems[0].classList.add("active");
+  const firstP = accordianItems[0].querySelector(".faq-content p");
+  if (firstP) {
+    firstP.style.maxHeight = firstP.scrollHeight + "px";
+  }
+}
+
+accordianItems.forEach(item => {
+  item.addEventListener("click", () => {
+    accordianItems.forEach(i => {
+      i.classList.remove("active");
+      const pTag = i.querySelector(".faq-content p");
+      if (pTag) {
+        pTag.style.maxHeight = null; 
+      }
+    });
+
+    item.classList.add("active");
+    const pTag = item.querySelector(".faq-content p");
+    if (pTag) {
+      pTag.style.maxHeight = pTag.scrollHeight + "px";
+    }
+  });
+});
+  </script>
+</body>
+
+</html>

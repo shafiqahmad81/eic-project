@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap');
+        
+        .error-section{
+            min-height: 98vh;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            text-align: center;
+            overflow-y: auto;
+        }
+        .error-section .container{
+            max-width: 1392px;
+            margin: 0 auto;
+            padding-inline: 16px;
+        }
+        .error-image img{
+            max-width: 100%;
+            width: 100%;
+            vertical-align: middle;
+        }
+        .error-image{
+            max-width: 490px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .error-content{
+            max-width: 560px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .error-content h4{
+            font-size: 32px;
+            color: #3384BD;
+            line-height: 40px;
+            font-weight: 700;
+            font-family: "Space Grotesk", sans-serif;
+            margin-top: 0;
+            margin-bottom: 21px;
+        }
+        .error-content p{
+            font-size: 18px;
+            color: #15374F;
+            line-height: 26px;
+            font-weight: 400;
+            font-family: "DM Sans", sans-serif;
+            max-width: 490px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        @media (max-width:640px) {
+            .error-content h4{
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 10px;
+            }
+            .error-content p{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    </style>
+    <section class="error-section">
+        <div class="container">
+            <div class="error-image">
+                <img src="./src/assets/image/error.svg" alt="error icon">
+            </div>
+            <div class="error-content">
+                <h4>Oops! This page has gone missing.</h4>
+                <p>Uh-oh! This page doesn’t exist. It might’ve moved or been deleted. Head to our homepage or explore below!</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <title>eic | blog</title>
+</head>
+
+<body>
+
+  <!--=============== HEADER SECTION START ==================-->
+  <header class="py-[54px] sticky top-0 left-0 right-0 bg-white z-50 transition-all duration-500 ease-in-out">
+    <div class="container">
+      <div class="flex items-center justify-between gap-2">
+        <a href="index.html" class="w-16 md:w-auto">
+          <img src="./src/assets/logo/logo.svg" alt="Logo icon">
+        </a>
+        <nav id="nav-area"
+          class="absolute top-0 left-[-9999px] right-0 bg-white lg:bg-transparent w-full h-screen lg:h-auto lg:w-auto lg:static flex items-center flex-col justify-between lg:block py-10 lg:py-0 transition-all duration-500 ease-in-ou overflow-y-auto">
+          <ul class="header-nav flex flex-col lg:flex-row items-center justify-center flex-wrap">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="#" class="active-item">Case Studies</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="lg:hidden flex items-center justify-center">
+            <button class="btn-primary group">Schedule a Call
+              <svg class="transition-all group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M6 18 18 6m0 0H9m9 0v9" />
+              </svg>
+            </button>
+          </div>
+          <div id="close-icon" class="w-6 absolute top-5 right-5 lg:hidden">
+            <button class="w-full">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0"
+                y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                <g>
+                  <path fill="#000000" fill-rule="evenodd"
+                    d="M5 17.586a1 1 0 1 0 1.415 1.415L12 13.414 17.586 19A1 1 0 0 0 19 17.586L13.414 12 19 6.414A1 1 0 0 0 17.585 5L12 10.586 6.414 5A1 1 0 0 0 5 6.414L10.586 12z"
+                    clip-rule="evenodd" opacity="1" data-original="#000000" class=" w-full"></path>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <div class="hidden lg:block min-w-[210px]">
+          <button class="btn-primary group">Schedule a Call
+            <svg class="transition-all duration-500 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 18 18 6m0 0H9m9 0v9" />
+            </svg>
+          </button>
+        </div>
+        <div id="hambargur-icon" class="block lg:hidden w-8">
+          <button class="w-8">
+            <svg class="w-full" xmlns="http://www.w3.org/2000/svg" version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64"
+              style="enable-background:new 0 0 512 512" xml:space="preserve">
+              <g>
+                <g data-name="4">
+                  <path
+                    d="M57 30H7a2 2 0 0 0 0 4h50a2 2 0 0 0 0-4zM7 19h50a2 2 0 0 0 0-4H7a2 2 0 0 0 0 4zM57 45H7a2 2 0 0 0 0 4h50a2 2 0 0 0 0-4z"
+                    fill="#000000" opacity="1" data-original="#000000"></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--=============== HEADER SECTION END ===============-->
+
+  <!--=============== BANNER SECTION START ===============-->
+  <section
+    class="banner-section bg-blue [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-60px)_100%,0_100%)] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-100px),calc(100%-150px)_100%,0_100%)]">
+    <div class="container">
+      <div class="bg-bottom bg-contain bg-no-repeat" style="background-image: url(./src/assets/image/banner-img.svg);">
+        <div class="max-w-[675px] mx-auto py-10 sm:py-20 md:py-40 lg:py-[232px] text-white text-center ">
+          <h1 class="uppercase">Capital One Breach: Cloud Misconfigurations Exposed</h1>
+          <p class="text-base sm:text-lg md:text-2xl md:leading-8 font-spacegrotesk mt-4 sm:mt-8">EIC the digital world
+            by delivering innovative security solutions & promoting cybersecurity awareness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--============== BANNER SECTION END ==============-->
+
+  <!-- ================== CAPITAL ONE BREACH SECTION START ================ -->
+  <section class="pt-6 md:pt-12 pb-12 md:pb-[100px]">
+    <div class="container">
+      <div class="lg:px-20">
+        <div class="flex gap-12 border-b border-[#C0D9EB] pb-[26px]">
+          <div class="item">
+            <span class="text-sm sm:text-base font-bold text-body">Client:</span>
+            <p class="font-bold">Jose Labelle</p>
+          </div>
+          <div class="item">
+            <span class="text-sm sm:text-base font-bold text-body">Subject:</span>
+            <p class="font-bold">Topic Name</p>
+          </div>
+          <div class="item">
+            <span class="text-sm sm:text-base font-bold text-body">Budget:</span>
+            <p class="font-bold">$12Million</p>
+          </div>
+          <div class="item">
+            <span class="text-sm sm:text-base font-bold text-body">Duration:</span>
+            <p class="font-bold">2 months</p>
+          </div>
+        </div>
+        <div class="mt-6 md:mt-12">
+          <h3 class="w-full max-w-[653px]">Capital One Breach: Cloud Misconfigurations Exposed</h3>
+          <p class="text-sm sm:text-base text-body mt-4">The Capital One data breach of 2019 served as a striking
+            reminder that even industry leaders can fall victim to avoidable <br>
+            cybersecurity flaws. In this case, a simple cloud misconfiguration opened the door to one of the largest
+            data exposures in the financial sector, compromising the sensitive information of over 100 million
+            customers.</p>
+        </div>
+        <div class="mt-6 md:mt-12">
+          <h3 class="w-full max-w-[653px]">What Happened</h3>
+          <p class="text-sm sm:text-base text-body mt-4">A former employee of a cloud service provider exploited a
+            misconfigured web application firewall (WAF) to gain <br>
+            unauthorized access to Capital One’s AWS-hosted data. The vulnerability allowed the attacker to obtain
+            credentials and <br>
+            access massive troves of data stored in the cloud—data that included names, addresses, credit scores, and
+            social security numbers. This breach wasn’t the result of complex malware or advanced persistent threats. It
+            stemmed from a basic security oversight —one that could have been prevented with proper access controls,
+            configuration audits, and cloud governance policies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================== CAPITAL ONE BREACH SECTION END ================ -->
+
+  <!-- ================= CYBER SECURITY SECTION START ==================== -->
+  <section class=" pb-12 md:pb-[100px]">
+    <div class="container">
+      <div class="flex flex-col sm:flex-row gap-6">
+        <div class="w-full sm:w-1/2">
+          <div><img src="./src/assets/image/case-studies-cyber1.png" alt="cyber"></div>
+          <div class="flex items-center justify-center flex-col mt-6">
+            <span class="text-sm sm:text-base font-bold text-body">Fig : A</span>
+            <p class="font-bold">Cyber Security</p>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2">
+          <div><img src="./src/assets/image/case-studies-cyber2.png" alt="cyber"></div>
+          <div class="flex items-center justify-center flex-col mt-6">
+            <span class="text-sm sm:text-base font-bold text-body">Fig : B</span>
+            <p class="font-bold">Cloud Security</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= CYBER SECURITY SECTION END ==================== -->
+
+  <!-- =============== CYBER SECURITY CONTENT SECTION START ================ -->
+
+  <section class="">
+    <div class="container">
+      <div class="lg:px-20">
+        <div class="mb-6 md:mb-12">
+          <p class="text-sm sm:text-base text-body mt-4">Capital One had heavily invested in cloud infrastructure to drive innovation and scalability. But this incident revealed that rapid adoption without equally aggressive security measures can lead to dangerous exposure. The attack exploited a gap in their cloud configuration, bypassing internal safeguards and enabling exfiltration of highly sensitive data.</p>
+          <p class="text-sm sm:text-base text-body mt-4">The breach had far-reaching consequences—not only for affected customers but also for the broader conversation around cloud security. It proved that even a single point of failure can unravel trust in an institution and raise regulatory alarms.</p>
+        </div>
+        <div class="mb-6 md:mb-12">
+          <h3 class="w-full max-w-[653px]">The Fallout</h3>
+          <p class="text-sm sm:text-base text-body mt-4">Following the breach, Capital One faced government investigations, class-action lawsuits, and more than $80 million in fines.Regulatory bodies emphasized the need for strong cloud security postures, especially in sectors dealing with sensitive financial data. Capital One responded by tightening its security operations and reviewing its cloud practices, but the incident had already exposed critical weaknesses. The breach became a textbook case in how cloud misconfigurations—often overlooked in favor of performance and agility— can have massive consequences. It drove home</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== CYBER SECURITY CONTENT SECTION END ================ -->
+
+  <!-- ================== CASE STUDIES & SUCCESS STORIES START ================= -->
+  <section class="pb-12 md:pb-[100px]">
+    <div class="container">
+      <h2 class="max-w-[393px] w-full mx-auto text-center">Case studies & <span class="text-blue">success</span> stories
+      </h2>
+      <div class="grid sm:grid-cols-2 gap-6 my-6 sm:my-12">
+        <div class="group">
+          <div class="mb-3 sm:mb-6">
+            <img src="./src/assets/image/case-studies-1.png" alt="case studies image">
+          </div>
+          <span>Enhanced data integrity for fintech firms.</span>
+          <h3 class="mt-1 sm:mt-2 transition-all group-hover:text-blue"><a href="#">Endpoint Protection Upgrade</a></h3>
+        </div>
+        <div class="group">
+          <div class="mb-3 sm:mb-6">
+            <img src="./src/assets/image/case-studies-1.png" alt="case studies image">
+          </div>
+          <span>Reduced threat exposure by 65% in 6 months.</span>
+          <h3 class="mt-1 sm:mt-2 transition-all group-hover:text-blue"><a href="#">Security System Overhaul</a></h3>
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <button class="btn-primary group">Explore All
+          <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M6 18 18 6m0 0H9m9 0v9" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- ================== CASE STUDIES & SUCCESS STORIES END ================= -->
+
+  <!-- ================= FOOTER SECTION START ================= -->
+  <footer class="bg-body py-[30px] md:py-[60px]">
+    <div class="bg-contain bg-right bg-no-repeat" style="background-image: url(./src/assets/icon/footer-bg-icon.svg);">
+      <div class="container">
+        <div class="flex items-center justify-between border-b border-[#EBF3F833]/20 py-5">
+          <a class="w-full max-w-20 sm:max-w-[115px]" href="#">
+            <img class="w-full" src="./src/assets/logo/logo.svg" alt="logo">
+          </a>
+          <div class="flex flex-col sm:flex-row gap-2 sm:gap-7 text-white">
+            <div class="flex items-center gap-2 sm:gap-4">
+              <div class="w-full max-w-6 sm:max-w-full">
+                <img src="./src/assets/image/phone.svg" alt="phone">
+              </div>
+              <div class="flex flex-col">
+                <a class="text-sm sm:text-base" href="tel:+8809617204204">+8809617204204</a>
+                <a class="text-sm sm:text-base" href="tel:+880241082448">+880241082448</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 sm:gap-4">
+              <div class="w-full max-w-6 sm:max-w-full">
+                <img src="./src/assets/image/mail.svg" alt="mail">
+              </div>
+              <div class="flex flex-col items-center">
+                <a class="text-sm sm:text-base" href="mailto:info@eic.com.bd">info@eic.com.bd</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between pt-6 border-b border-[#EBF3F8]/20 pb-6 sm:pb-12 gap-10">
+          <div class="w-full max-w-[352px] text-white">
+            <p class="">Subscribe our newsletter for latest security related <br> knowledge</p>
+            <form action="#" class="mt-6">
+              <div class="flex items-center gap-1">
+                <input
+                  class="bg-white rounded-full focus:outline-0 text-sm leading-3.5 font-roboto py-[13px] px-4 text-[#142149] w-full max-w-[241px]"
+                  type="email" required placeholder="Enter your email">
+                <button class="text-base font-roboto font-medium leading-4 px-6 py-3 rounded-full bg-blue"
+                  type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="w-full max-w-[642px] flex justify-between flex-wrap gap-5 sm:gap-10 text-white">
+            <div class="menu">
+              <h5>Main Page</h5>
+              <ul class="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="case-study.html">Case Studies</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <h5>Services</h5>
+              <ul class="">
+                <li><a href="#">PCI DSS Compliance </a></li>
+                <li><a href="#">ISO 27001ISMS</a></li>
+                <li><a href="#">Swift CSP Assessment</a></li>
+                <li><a href="#">ISO 22301:2019</a></li>
+                <li><a href="#">Penetration Testing</a></li>
+                <li><a href="#">IT/IS Audit</a></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <h5>Social link</h5>
+              <ul class="">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 items-center justify-between text-white pt-5 sm:pt-10">
+          <span class="text-white text-sm sm:text-base sm:leading-6 font-roboto font-medium">Powered by Ontik
+            Creative</span>
+          <div class="flex items-center gap-4">
+            <a href="privacy-polici.html"
+              class="text-white text-sm sm:text-base sm:leading-6 font-roboto font-medium transition-all hover:text-white/50">Privacy
+              Policy</a>
+            <span class="w-0.5 h-3 bg-white"></span>
+            <a href="terms-condition.html"
+              class="text-white text-sm sm:text-base sm:leading-6 font-roboto font-medium transition-all hover:text-white/50">Terms
+              & Condition</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- ================= FOOTER SECTION END ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
