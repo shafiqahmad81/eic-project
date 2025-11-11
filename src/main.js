@@ -6,7 +6,6 @@ const open = document.getElementById('hambargur-icon');
 const close = document.getElementById('close-icon');
 const header = document.getElementById("header-section");
 
-const isHomePage = window.location.pathname === "/" || window.location.pathname.endsWith("index.html");
 
 open.addEventListener('click', () => {
   nav.classList.replace('left-[-9999px]', 'left-0');
@@ -16,7 +15,7 @@ close.addEventListener('click', () => {
   nav.classList.replace('left-0', 'left-[-9999px]');
 });
 
-if (isHomePage) {
+
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       header.classList.add("bg-white", "shadow-md", "py-3");
@@ -26,10 +25,7 @@ if (isHomePage) {
       header.classList.remove("bg-white", "shadow-md", "py-3");
     }
   });
-} else {
-  header.classList.add("bg-white", "shadow-md", "py-3");
-  header.classList.remove("bg-transparent", "py-[54px]");
-}
+
 // HEADER SECTION END
 
 
@@ -82,7 +78,41 @@ var swiper = new Swiper(".mySwiper", {
 // SLIDER END
 
 
-// load more
+// counter
+// JS
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll("#counter .count");
+  let hasCounted = false; 
+
+  function runCounter(el) {
+    const target = +el.getAttribute("data-target");
+    const duration = 2000; 
+    const stepTime = Math.floor(duration / target);
+    let count = 0;
+
+    const counterInterval = setInterval(() => {
+      count++;
+      el.textContent = count;
+      if (count >= target) {
+        el.textContent = target;
+        clearInterval(counterInterval);
+      }
+    }, stepTime);
+  }
+
+  function checkCounters() {
+    const section = document.getElementById("counter");
+    const rect = section.getBoundingClientRect();
+    if (!hasCounted && rect.top < window.innerHeight && rect.bottom >= 0) {
+      counters.forEach(runCounter);
+      hasCounted = true;
+    }
+  }
+
+  window.addEventListener("scroll", checkCounters);
+  checkCounters();
+});
+
 
 
 

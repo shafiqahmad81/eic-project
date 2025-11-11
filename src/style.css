@@ -265,6 +265,10 @@ footer .menu ul li a:hover{
 
 }
 
+ header:not(.home-page){
+    background-color: white;
+    /* position: relative; */
+ }
 @utility container {
     @apply mx-auto px-4;
     @media (width >=87rem   /* 1392px */
