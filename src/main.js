@@ -68,16 +68,11 @@ var swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   loop: true,
   grabCursor: true,
-  speed: 600,
-  watchSlidesProgress: true,
-  loopedSlides: 20, // ensure enough duplicate slides
-  loopAdditionalSlides: 20,
-  resistanceRatio: 0, // prevents jump when dragging
   slideToClickedSlide: true,
-  
+
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".custom-next",
+    prevEl: ".custom-prev",
   },
 
   breakpoints: {
@@ -86,12 +81,9 @@ var swiper = new Swiper(".mySwiper", {
     0: { slidesPerView: 1.1 },
   },
 
-  on: {
-    init() {
-      this.slideToLoop(1, 0);
-    },
-  },
 });
+
+
 
 
 // SLIDER END
@@ -139,10 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// OUR PROVEN SECTION
 
-
-
-
-// FAQ SECTION
 
 

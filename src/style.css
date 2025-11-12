@@ -77,6 +77,8 @@ footer .menu ul li a:hover{
     }
 }
 
+
+/* slider css start */
 .swiper-wrapper{
     align-items: center;
     padding-bottom: 80px;
@@ -103,14 +105,10 @@ footer .menu ul li a:hover{
 .custom-next, .custom-prev{
     top: inherit !important;
 }
-.mySwiper {
-  overflow: visible !important; /* right side visible রাখবে */
-}
 .swiper-btn-wrap{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 22px; */
 }
 
 .custom-next, .custom-prev {
@@ -125,6 +123,8 @@ footer .menu ul li a:hover{
         margin-top: 40px !important;
     }
 }
+
+/* slider css end */
 
 .protection-active{
     @apply shadow-[25px_36px_18px_rgba(0,0,0,0.01),14px_20px_15px_rgba(0,0,0,0.05),6px_9px_11px_rgba(0,0,0,0.09),2px_2px_6px_rgba(0,0,0,0.1)]
@@ -308,6 +308,7 @@ footer .menu ul li a:hover{
   animation-delay: .2s;
 }
 
-
-
+html {
+  scroll-behavior: smooth;
+}
 
