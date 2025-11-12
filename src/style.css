@@ -103,6 +103,9 @@ footer .menu ul li a:hover{
 .custom-next, .custom-prev{
     top: inherit !important;
 }
+.mySwiper {
+  overflow: visible !important; /* right side visible রাখবে */
+}
 .swiper-btn-wrap{
     display: flex;
     align-items: center;
@@ -280,26 +283,31 @@ footer .menu ul li a:hover{
   .clip-path-corner {
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
   }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none; 
+        scrollbar-width: none;   
+    }
 }
-  @keyframes growBar {
-    from {
-      width: 0;
-    }
-    to {
-      width: var(--target-width);
-    }
-  }
 
-  .bar {
-    width: 0;
-    height: 100%;
-    left: 0;
-    top: 0;
-  }
+@keyframes growBar {
+  from { width: 0; }
+  to { width: var(--target-width); }
+}
 
-  .animate-bar {
-    animation: growBar 1.2s ease-out forwards;
-  }
+.bar {
+  width: 0; /* initial width 0 */
+  height: 100%;
+}
+
+.animate-bar {
+  animation: growBar 1.2s ease-out forwards;
+  animation-delay: .2s;
+}
+
 
 
 

@@ -30,74 +30,115 @@ close.addEventListener('click', () => {
 
 
 // SECURITY ANIMATION START
+
 document.addEventListener("DOMContentLoaded", () => {
+  const chartSection = document.querySelector(".chart-section");
+
+  if (!chartSection) return;
+
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const bars = entry.target.querySelectorAll(".bar");
+          const bars = chartSection.querySelectorAll(".bar");
           bars.forEach(bar => {
-            const height = bar.getAttribute("data-height");
-            bar.style.setProperty("--target-height", height);
             bar.classList.add("animate-bar");
           });
-          observer.unobserve(entry.target);
+          observer.unobserve(chartSection);
         }
       });
     },
-    { threshold: 0.3 }
+    { threshold: 0.4 }
   );
 
-  document.querySelectorAll(".chart").forEach(chart => observer.observe(chart));
+  observer.observe(chartSection);
 });
+
+
+
+
+
 // SECURITY ANIMATION END
 
 
 // SLIDER START
 var swiper = new Swiper(".mySwiper", {
-      centeredSlides: true,
-      spaceBetween: 36,
-      loop: true,
-      grabCursor: true,
-      initialSlide: 2,
-    on: {
-      init: function () {
-        this.slideToLoop(1, 0);
-      },
+  slidesPerView: 2.5,
+  spaceBetween: 36,
+  centeredSlides: true,
+  loop: true,
+  grabCursor: true,
+  speed: 600,
+  watchSlidesProgress: true,
+  loopedSlides: 20, // ensure enough duplicate slides
+  loopAdditionalSlides: 20,
+  resistanceRatio: 0, // prevents jump when dragging
+  slideToClickedSlide: true,
+  
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    1024: { slidesPerView: 2.5 },
+    768: { slidesPerView: 1.5 },
+    0: { slidesPerView: 1.1 },
+  },
+
+  on: {
+    init() {
+      this.slideToLoop(1, 0);
     },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-       breakpoints: {
-        1024: { slidesPerView: 2.5 }, 
-        768: { slidesPerView: 1.5 }, 
-        0: { slidesPerView: 1.1 }, 
-      },
-    });
+  },
+});
+
+
 // SLIDER END
 
 
 // counter JS
-const counters = document.querySelectorAll('.count');
+document.addEventListener("DOMContentLoaded", () => {
+  const counterWrap = document.querySelector("#counter-wrap");
 
-counters.forEach(counter => {
-  const updateCounter = () => {
-    const target = +counter.getAttribute('data-target');
-    const current = +counter.innerText.replace('+', '');
+  if (!counterWrap) return;
 
-    const increment = target / 100;
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            const counters = counterWrap.querySelectorAll(".count");
 
-    if (current < target) {
-      counter.innerText = Math.ceil(current + increment) + '+';
-      setTimeout(updateCounter, 20);
-    } else {
-      counter.innerText = target + '+';
-    }
-  };
+            counters.forEach(counter => {
+              const updateCounter = () => {
+                const target = +counter.getAttribute("data-target");
+                const current = +counter.innerText.replace("+", "");
+                const increment = target / 100;
 
-  updateCounter();
+                if (current < target) {
+                  counter.innerText = Math.ceil(current + increment) + "+";
+                  setTimeout(updateCounter, 20);
+                } else {
+                  counter.innerText = target + "+";
+                }
+              };
+
+              updateCounter();
+            });
+          }, 200);
+
+          observer.unobserve(counterWrap);
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  observer.observe(counterWrap);
 });
+
+
 
 
 
