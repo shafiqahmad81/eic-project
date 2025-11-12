@@ -78,39 +78,25 @@ var swiper = new Swiper(".mySwiper", {
 // SLIDER END
 
 
-// counter
-// JS
-document.addEventListener("DOMContentLoaded", () => {
-  const counters = document.querySelectorAll("#counter .count");
-  let hasCounted = false; 
+// counter JS
+const counters = document.querySelectorAll('.count');
 
-  function runCounter(el) {
-    const target = +el.getAttribute("data-target");
-    const duration = 2000; 
-    const stepTime = Math.floor(duration / target);
-    let count = 0;
+counters.forEach(counter => {
+  const updateCounter = () => {
+    const target = +counter.getAttribute('data-target');
+    const current = +counter.innerText.replace('+', '');
 
-    const counterInterval = setInterval(() => {
-      count++;
-      el.textContent = count;
-      if (count >= target) {
-        el.textContent = target;
-        clearInterval(counterInterval);
-      }
-    }, stepTime);
-  }
+    const increment = target / 100;
 
-  function checkCounters() {
-    const section = document.getElementById("counter");
-    const rect = section.getBoundingClientRect();
-    if (!hasCounted && rect.top < window.innerHeight && rect.bottom >= 0) {
-      counters.forEach(runCounter);
-      hasCounted = true;
+    if (current < target) {
+      counter.innerText = Math.ceil(current + increment) + '+';
+      setTimeout(updateCounter, 20);
+    } else {
+      counter.innerText = target + '+';
     }
-  }
+  };
 
-  window.addEventListener("scroll", checkCounters);
-  checkCounters();
+  updateCounter();
 });
 
 

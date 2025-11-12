@@ -291,7 +291,7 @@
         </div>
       </div>
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="border-2 border-[#EBF3F8] rounded-[10px] shadow-3xl bg-bottom bg-contain bg-no-repeat"
+        <div class="border-2 border-[#EBF3F8] rounded-[10px] shadow-3xl transition-all hover:shadow-4xl bg-bottom bg-contain bg-no-repeat"
           style="background-image: url(./src/assets/image/commitment-item-bg.png);">
           <div class="p-8 pb-10">
             <div class="pr-4 md:pr-7 w-full max-w-[581px]">
@@ -306,7 +306,7 @@
             </div>
           </div>
         </div>
-        <div class="border-2 border-[#EBF3F8] rounded-[10px] shadow-3xl bg-bottom bg-contain bg-no-repeat"
+        <div class="border-2 border-[#EBF3F8] rounded-[10px] shadow-3xl transition-all hover:shadow-4xl bg-bottom bg-contain bg-no-repeat"
           style="background-image: url(./src/assets/image/commitment-item-bg.png);">
           <div class="p-8 pb-10">
             <div class="pr-7">
@@ -321,7 +321,7 @@
             </div>
           </div>
         </div>
-        <div class="border-2 border-[#EBF3F8] rounded-[10px] shadow-3xl bg-bottom bg-contain bg-no-repeat"
+        <div class="border-2 border-[#EBF3F8] rounded-[10px] shadow-3xl transition-all hover:shadow-4xl bg-bottom bg-contain bg-no-repeat"
           style="background-image: url(./src/assets/image/commitment-item-bg.png);">
           <div class="p-8 pb-10">
             <div class="pr-7">
@@ -336,7 +336,7 @@
             </div>
           </div>
         </div>
-        <div class="border-2 border-[#EBF3F8] rounded-[10px] shadow-3xl bg-bottom bg-contain bg-no-repeat"
+        <div class="border-2 border-[#EBF3F8] rounded-[10px] shadow-3xl transition-all hover:shadow-4xl bg-bottom bg-contain bg-no-repeat"
           style="background-image: url(./src/assets/image/commitment-item-bg.png);">
           <div class="p-8 pb-10">
             <div class="pr-7">
@@ -377,9 +377,8 @@
                 <div class="h-0.5 w-full lg:max-w-[206px] bg-white/30 mt-4"></div>
                 <div id="counter">
                   <span
-                  class="count text-3xl sm:text-[40px] leading-10 font-semibold text-white font-spacegrotesk mt-4 block" data-target="200">200+</span>
+                  class="count text-3xl sm:text-[40px] leading-10 font-semibold text-white font-spacegrotesk mt-4 block" data-target="200">0+</span>
                 </div>
-                
               </div>
             </div>
             <div class="flex flex-col justify-between gap-6">
@@ -391,7 +390,7 @@
                 <div class="h-0.5 w-full lg:max-w-[206px] bg-white/30 mt-4"></div>
                 <div id="counter">
                   <span
-                  class="count text-3xl sm:text-[40px] leading-10 font-semibold text-white font-spacegrotesk mt-4 block" data-target="500">500+</span>
+                  class="count text-3xl sm:text-[40px] leading-10 font-semibold text-white font-spacegrotesk mt-4 block" data-target="500">0+</span>
                 </div>
                 
               </div>
@@ -404,7 +403,7 @@
                 <h5 class="text-base sm:text-lg leading-6 font-dmsans font-normal">Systems Secured</h5>
                 <div class="h-0.5 w-full lg:max-w-[206px] bg-white/30 mt-4"></div>
                 <div id="counter">
-                   <span class="count text-3xl sm:text-[40px] leading-10 font-semibold text-white font-spacegrotesk mt-4 block" data-target="490">490+</span>
+                   <span class="count text-3xl sm:text-[40px] leading-10 font-semibold text-white font-spacegrotesk mt-4 block" data-target="490">0+</span>
                 </div>
                 
               </div>
@@ -418,7 +417,7 @@
                 <div class="h-0.5 w-full lg:max-w-[206px] bg-white/30 mt-4"></div>
                 <div id="counter">
                   <span 
-                  class="count text-3xl sm:text-[40px] leading-10 font-semibold text-white font-spacegrotesk mt-4 block"  data-target="369">369+</span>
+                  class="count text-3xl sm:text-[40px] leading-10 font-semibold text-white font-spacegrotesk mt-4 block"  data-target="369">0+</span>
                 </div>
                 
               </div>
@@ -771,15 +770,15 @@
       </h2>
       <div class="grid sm:grid-cols-2 gap-6 my-6 sm:my-12">
         <div class="group">
-          <div class="mb-3 sm:mb-6">
-            <img src="./src/assets/image/case-studies-1.png" alt="case studies image">
+          <div class="mb-3 sm:mb-6 ">
+            <img src="./src/assets/image/case-studies-1.png" alt="case studies image" class="w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-105">
           </div>
           <span>Enhanced data integrity for fintech firms.</span>
           <h3 class="mt-1 sm:mt-2 transition-all group-hover:text-blue"><a href="#">Endpoint Protection Upgrade</a></h3>
         </div>
         <div class="group">
           <div class="mb-3 sm:mb-6">
-            <img src="./src/assets/image/case-studies-2.png" alt="case studies image">
+            <img src="./src/assets/image/case-studies-2.png" alt="case studies image" class="w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-105">
           </div>
           <span>Reduced threat exposure by 65% in 6 months.</span>
           <h3 class="mt-1 sm:mt-2 transition-all group-hover:text-blue"><a href="#">Security System Overhaul</a></h3>
@@ -833,15 +832,12 @@
       </div>
       <div id="BrowserLatest" class="grid sm:grid-cols-2 md:grid-cols-3 py-6 md:py-12 gap-5 lg:gap-9">
         <div class="items">
-          <div class="image-wrap">
-            <img src="./src/assets/image/thumbnail-1.jpg" alt="thumbnail">
-          </div>
+          <a href="#" class="group">
+            <img src="./src/assets/image/thumbnail-1.jpg" alt="thumbnail" class="w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-105">
+          </a>
           <div class="group">
             <time
-              class="text-body text-sm font-medium leading-5 -tracking-[0.14px] mt-3 md:mt-7 inline-block transition-all group-hover:text-blue">July
-              15,
-              2025
-              · 7 min read</time>
+              class="text-body text-sm font-medium leading-5 -tracking-[0.14px] mt-3 md:mt-7 inline-block transition-all group-hover:text-blue">July 15, 2025 · 7 min read</time>
             <h4 class="my-1 md:my-3 font-dmsans transition-all group-hover:text-blue">
               <a href="#">The Future of Cyber Threat Prevention</a>
             </h4>
@@ -856,9 +852,9 @@
           </div>
         </div>
         <div class="items">
-          <div class="image-wrap">
-            <img src="./src/assets/image/thumbnail-2.jpg" alt="thumbnail">
-          </div>
+          <a href="#" class="group">
+            <img src="./src/assets/image/thumbnail-2.jpg" alt="thumbnail" class="w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-105">
+          </a>
           <div class="group">
             <time
               class="text-body text-sm font-medium leading-5 -tracking-[0.14px] mt-3 md:mt-7 inline-block transition-all group-hover:text-blue">September
@@ -876,9 +872,9 @@
           </div>
         </div>
         <div class="items">
-          <div class="image-wrap">
-            <img src="./src/assets/image/thumbnail-3.jpg" alt="thumbnail">
-          </div>
+          <a href="#" class="group">
+            <img src="./src/assets/image/thumbnail-3.jpg" alt="thumbnail" class="w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-105">
+          </a>
           <div class="group">
             <time datetime=""
               class="text-body text-sm font-medium leading-5 -tracking-[0.14px] mt-3 md:mt-7 inline-block transition-all group-hover:text-blue">August
@@ -896,9 +892,9 @@
           </div>
         </div>
         <div class="items">
-          <div class="image-wrap">
-            <img src="./src/assets/image/thumbnail-3.jpg" alt="thumbnail">
-          </div>
+          <a href="#" class="group">
+            <img src="./src/assets/image/thumbnail-3.jpg" alt="thumbnail" class="w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-105">
+          </a>
           <div class="group">
             <time datetime=""
               class="text-body text-sm font-medium leading-5 -tracking-[0.14px] mt-3 md:mt-7 inline-block transition-all group-hover:text-blue">August
