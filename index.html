@@ -84,45 +84,44 @@
 
   <!--=============== HERO SECTION START ===============-->
   <section
-    class="relative pb-11 w-full mx-auto overflow-hidden min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[1020px] max-h-[1020px]">
-    <!-- Background video for desktop/tablet -->
-    <video class=" absolute inset-0 w-full h-full object-cover" src="/src/assets/videos/home-page-bg.mp4" autoplay muted
-      loop playsinline></video>
-
-
+    class="relative pb-11 w-full mx-auto overflow-hidden min-h-[400px] sm:min-h-[1340px] xl:min-h-[1542px] max-h-[1020px] bg-cover bg-right bg-no-repeat" style="background-image: url(./src/assets/image/hero-banner.svg);">
     <div class="container relative z-10">
-      <div class="max-w-[754px] pt-[190px] pb-12 md:pb-[260px]">
-        <h1 class="text-body uppercase">Simplifying Cybersecurity & Compliance</h1>
-        <p
-          class="w-full max-w-[606px] text-base sm:text-xl md:text-2xl md:leading-8 font-normal text-[#245E86] font-spacegrotesk my-4 sm:my-8">
-          Your trusted cybersecurity service provider safeguarding data and ensuring compliance with clarity and
-          confidence.</p>
-        <div class="flex flex-col sm:flex-row items-center gap-2">
-          <a href="#" class="btn-primary group">Secure my Business
-            <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                d="M6 18 18 6m0 0H9m9 0v9" />
-            </svg>
-          </a>
-          <a href="#" class="btn-secondary group">Company Profile
-            <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                d="M6 18 18 6m0 0H9m9 0v9" />
-            </svg>
-          </a>
+      <div class="flex flex-col lg:flex-row pt-[190px] pb-12 md:pb-[260px]">
+        <div class="w-full lg:max-w-[754px] order-2 lg:order-1">
+          <h1 class="text-body uppercase">Simplifying Cybersecurity & Compliance</h1>
+          <p
+            class="w-full max-w-[606px] text-base sm:text-xl md:text-2xl md:leading-8 font-normal text-[#245E86] font-spacegrotesk my-4 sm:my-8">
+            Your trusted cybersecurity service provider safeguarding data and ensuring compliance with clarity and
+            confidence.</p>
+          <div class="flex flex-col sm:flex-row items-center gap-2">
+            <a href="#" class="btn-primary group">Secure my Business
+              <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M6 18 18 6m0 0H9m9 0v9" />
+              </svg>
+            </a>
+            <a href="#" class="btn-secondary group">Company Profile
+              <svg class="transition-all duration-500 group-hover:rotate-45 w-5 md:w-6 h-5 md:h-6"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M6 18 18 6m0 0H9m9 0v9" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="w-full lg:max-w-[52.132%] order-1 lg:order-2">
+          <img src="./src/assets/image/hero-banner-image.svg" alt="hero-banner-image">
         </div>
       </div>
     </div>
   </section>
   <!--============== HERO SECTION END ==============-->
 
-  <section class="relative z-10 pb-5 md:pb-10 mx-auto">
-
+  <section class="relative z-10 pb-5 md:pb-10 mx-auto lg:-mt-80 xl:-mt-[540px]">
     <div class="container">
-      <div class="flex flex-col lg:flex-row  gap-5 justify-between mt-8">
-        <div class="w-full lg:max-w-[37.720%] pr-9 lg:mt-8 xl:mt-16 2xl:mt-28">
+      <div class="flex flex-col lg:flex-row  gap-5 justify-between">
+        <div class="w-full lg:max-w-[37.720%] pr-9 lg:mt-8 xl:mt-16 2xl:mt-28 order-2 lg:order-1">
           <h2 class="text-2xl sm:text-3xl md:text-[40px] md:leading-12 w-full lg:w-[500px] xl:w-[610px]">Securing <span
               class="text-blue">Top</span> Brands Worldwide</h2>
           <p
@@ -142,7 +141,7 @@
             </a>
           </div>
         </div>
-        <div class="w-full lg:max-w-[calc(100%-37.720%)] flex flex-col items-end">
+        <div class="w-full lg:max-w-[calc(100%-37.720%)] flex flex-col items-end order-1 lg:order-2">
           <div class="w-[71.074%] border border-[#F4F4F6] rounded-xl sm:rounded-3xl p-2 sm:p-[17px]">
             <div
               class="bg-[#F4F4F6] flex items-center justify-between gap-5 px-2 sm:px-[30px] py-3 sm:py-5 rounded-md sm:rounded-[10px]">
@@ -186,7 +185,7 @@
   </section>
 
   <!--============== SECURITY SECTION START ================-->
-  <section class="bg-[#EBF3F8] py-12 md:py-[100px]">
+  <section class="bg-[#EBF3F8] py-12 md:py-[100px] relative z-20">
     <div class="container">
       <div class="flex flex-col md:flex-row">
         <div class="w-full md:max-w-[52.058%] lg:pt-8">
