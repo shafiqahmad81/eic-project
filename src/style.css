@@ -357,7 +357,7 @@ html {
     }
 
 }
-@media(max-width:1919px){
+@media(max-width:1920px){
     .eic-home .pci-wrap::after {
         top: -68px;
         right: 0;
@@ -406,6 +406,39 @@ html {
         height: 50%;
         transform: translateX(0px);
         z-index: -99;
+    }
+}
+@media(min-width:1537px) and (max-width:1780px){
+    .pci-wrap::after {
+        top: 193px;
+        height: 72%;
+    }
+}
+@media(min-width:1280px) and (max-width:1536px){
+    .pci-wrap::after {
+        top: 261px;
+    }
+}
+@media(min-width:1024px) and (max-width:1279px){
+    .pci-wrap::after {
+        top: 261px;
+    }
+}
+@media(min-width:768px) and (max-width:860px){
+    .pci-wrap::after {
+        top: 55px;
+    }
+}
+@media(min-width:320px) and (max-width:354px){
+    .content-wrap {
+        padding-top: 20px;
+    }
+}
+@media(max-width:420px){
+    .pci-wrap::after {
+        top: 32px;
+        width: 114%;
+        height: 100%;
     }
 }
 
