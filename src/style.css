@@ -38,7 +38,7 @@ footer .menu h5{
     @apply mb-2 sm:mb-4
 }
 footer .menu ul li a{
-    @apply text-[#B5B5B5] text-sm sm:text-base sm:leading-6 font-medium py-1.5 sm:py-3 inline-block transition-all
+    @apply text-[#B5B5B5] text-sm sm:text-base sm:leading-6 font-medium py-1.5 sm:py-2 inline-block transition-all
 }
 footer .menu ul li a:hover{
     @apply text-white
@@ -363,7 +363,7 @@ html {
     }
     
 }
-@media(max-width:768px){
+@media(max-width:767px){
     .pci-wrap::after {
         width: 215%;
         height: 124%;
@@ -389,14 +389,4 @@ html {
         top: 0px;
     }
 }
-
-/* .service::after{
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url(./assets/image/eic-bg.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
